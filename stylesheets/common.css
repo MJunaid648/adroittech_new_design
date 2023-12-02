@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+:root {
+  font-size: 62.5%;
+  --Primary: #731dd8;
+  --Background: #201f1e;
+  --Celeste: #bcf8ec;
+  --Light-blue: #aed9e0;
+  --Cool-gray: #9fa0c3;
+  --body: "Outfit", sans-serif;
+  --Headline: "Space Grotesk", sans-serif;
+  --total-brands: 14;
+  --logo-height: 7rem;
+  --total-logos-height: calc(var(--total-brands) * var(--logo-height) * 2);
+  --animation-duration: calc(var(--total-brands) * 1.5s);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background: var(--Background);
+  color: #fff;
+  font-family: var(--body);
+  font-size: 1.6rem;
+}
+.left-frame {
+  padding: 0.8rem 1.6rem;
+  margin-bottom: 1rem;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 3.3rem;
+  background: rgba(115, 29, 216, 0.07);
+  font-size: 1.6rem;
+  color: var(--Primary);
+}
+.top-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-heading h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+.top-heading p {
+  max-width: 52rem;
+  color: #b8b8b8;
+  font-size: 1.6rem;
+  text-align: right;
+}
+.heading-hr {
+  width: 100%;
+  margin: 5rem 0;
+  border: 1px solid #2a353c;
+}
+.btn {
+  cursor: pointer;
+  padding: 1.6rem 3rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.primary {
+  background: var(--Primary);
+  font-size: 2rem;
+}
+.secondary {
+  background: #181f23;
+}
+.sec-btn {
+  margin-top: 5.2rem;
+  border: 1px solid #383945;
+  align-self: flex-start;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--Headline);
+}
+p {
+  color: #b8b8b8;
+  font-size: 16px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8rem 5rem;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #4b4b4b;
+  padding: 1.6rem 0;
+}
+nav img {
+  width: 15.1rem;
+  height: 3.1rem;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+nav li {
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+nav li:hover {
+  border-bottom: 1px solid #fff;
+}
+nav li :last-child:hover {
+  border-bottom: 1px solid transparent !important;
+}
+nav button {
+  background: #181f23 !important;
+  border: 1px solid #383945 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-heading {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .top-heading h2 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .top-heading p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .top-heading br {
+    display: none;
+  }
+  .left-frame {
+    margin-bottom: 1.5rem;
+  }
+  .sec-btn {
+    margin-top: 3rem;
+  }
+  .heading-hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  section{
+    padding: 2rem;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav ul {
+    display: none;
+  }
+  .top-heading {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .top-heading h2 {
+    font-size: 3.2rem;
+  }
+  .top-heading p {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  .top-heading br {
+    display: none;
+  }
+  .left-frame {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .sec-btn {
+    margin-top: 2rem;
+  }
+  .heading-hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .btn {
+    cursor: pointer;
+    padding: 1.6rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .primary {
+    background: var(--Primary);
+    font-size: 2rem;
+  }
+  .secondary {
+    background: #181f23;
+  }
+  section{
+    padding: 2rem;
+  }
+}

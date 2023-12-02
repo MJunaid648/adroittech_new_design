@@ -1,0 +1,378 @@
+/* HERO */
+.hero {
+  padding-bottom: 20rem;
+  background-image: url("../assets/Dark\ Gradient\ background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  margin-top: 16rem;
+  font-size: 9.6rem;
+  letter-spacing: 1rem;
+}
+.hero p {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+/* OUR DIGITAL ODYSSEY */
+.our-digital .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16rem;
+}
+.our-digital div p {
+  font-size: 2rem;
+}
+.our-digital div img {
+  width: 16.8rem;
+  height: 16.8rem;
+}
+/* ADROITTECH VALUES */
+.values {
+  background: #0d1317;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+}
+.card {
+  /* flex: 1; */
+  background: #181f23;
+  padding: 2.4rem;
+  border-radius: 1.375rem;
+}
+.card > object {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 14rem;
+}
+.card p {
+  font-size: 1.5rem;
+}
+.card h3 {
+  font-size: 3.6rem;
+  max-height: 7.2rem;
+  font-weight: 500;
+}
+.card h3 br {
+  display: none;
+}
+@media screen and (max-width: 1279px) and (min-width: 481px) {
+  .card h3 br {
+    display: block;
+  }
+}
+.card hr {
+  margin: 1.8rem 0;
+  border: 1px solid #2a353c;
+}
+/* SYNERGIZING SKILLS */
+.synergizing {
+  background: #0d1317;
+}
+.synergizing .cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.synergizing .card {
+  width: 32%;
+}
+.synergizing .card img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+/* TESTIMONIALS */
+.testimonials {
+  background-image: url("../assets/Dark\ Gradient\ background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content-wrapper {
+  margin: auto;
+  border-radius: 30px;
+  background: #151e24;
+  padding: 11rem;
+}
+.content-wrapper .review-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+}
+#imgDiv {
+  border-radius: 50%;
+  width: 7.9rem;
+  height: 7.9rem;
+  background-size: cover;
+}
+#personName {
+  font-size: 2.4rem;
+  font-family: var(--Headline);
+  font-weight: 700;
+  text-align: left;
+}
+#profession {
+  color: #6f6f6f;
+  font-family: var(--Headline);
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: left;
+}
+#description {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.lower {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.lower .client-info {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.lower .btns {
+  margin-left: auto;
+  display: flex;
+}
+.btns {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.arrow {
+  background: #394248;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.arrow:hover {
+  transition: 0.3s;
+  transform: scale(1.15);
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  /* HERO */
+  .hero {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  .hero h1 {
+    margin-top: 8rem;
+    font-size: 6.8rem;
+    letter-spacing: 0.7rem;
+  }
+  .hero p {
+    margin-bottom: 8rem;
+    font-size: 1.7rem;
+  }
+  /* OUR DIGITAL ODYSSEY */
+  .our-digital .main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .our-digital div p {
+    font-size: 1.8rem;
+  }
+  /* ADROITTECH VALUES */
+  .card {
+    padding: 2vw;
+    width: 33%;
+  }
+  .card > object {
+    margin-bottom: 10rem;
+  }
+  .card p {
+    font-size: 1.6rem;
+  }
+  .card h3 {
+    font-size: 3vw;
+  }
+  /* SYNERGIZING SKILLS */
+  .synergizing .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .synergizing .card {
+    width: 48%;
+  }
+  .synergizing .card img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .content-wrapper {
+    padding: 2.4rem 3rem;
+  }
+  .content-wrapper .review-wrap {
+    gap: 2.2rem;
+  }
+  #personName {
+    font-size: 2rem;
+  }
+  #profession {
+    font-size: 1.4rem;
+  }
+  #description {
+    font-size: 1.8rem;
+  }
+  .lower {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.2rem;
+  }
+  .lower .client-info {
+    gap: 1.2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* HERO */
+  .hero {
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero h1 {
+    margin-top: 6rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .hero p {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  /* OUR DIGITAL ODYSSEY */
+  .our-digital .main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .our-digital div p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  /* ADROITTECH VALUES */
+  .cards {
+    flex-direction: column;
+    gap: 2.7rem;
+  }
+  .card-heading h3 {
+    font-size: 3.2rem;
+  }
+  /* SYNERGIZING SKILLS */
+  .synergizing .cards {
+    flex-direction: column;
+  }
+  .synergizing .card {
+    width: auto;
+  }
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .testimonials .left p br {
+    display: none;
+  }
+
+  .content-wrapper {
+    padding: 2.4rem 3rem;
+  }
+  .content-wrapper .review-wrap {
+    gap: 2.2rem;
+  }
+  #personName {
+    font-size: 2rem;
+  }
+  #profession {
+    font-size: 1.4rem;
+  }
+  #description {
+    font-size: 1.8rem;
+  }
+  .lower {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.2rem;
+  }
+  .lower .client-info {
+    gap: 1.2rem;
+  }
+}
+
+/* SLIDER */
+
+.slider {
+  position: relative;
+  height: 302px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.slider2 {
+  align-self: flex-end;
+}
+
+.slider ul.brands {
+  list-style: none;
+  height: var(--total-logos-height);
+  display: flex;
+  flex-direction: column; /* Updated for vertical layout */
+  animation: slideUp var(--animation-duration) linear infinite;
+}
+.slider2 ul.brands {
+  animation: slideUp 70s linear infinite;
+}
+
+.slider:hover ul.brands {
+  animation-play-state: paused;
+}
+
+@keyframes slideUp {
+  100% {
+    transform: translateY(calc(-100% / 2));
+  }
+}
+@keyframes slideDown {
+  100% {
+    transform: translateY(calc(100%));
+  }
+}
+
+ul.brands li.brand-logo {
+  padding: 1rem;
+  margin-top: 3rem;
+  height: var(--logo-height);
+  width: 7rem;
+  /* border: 1px solid red; */
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 18px;
+  background: #181f23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
