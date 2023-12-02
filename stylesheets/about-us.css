@@ -1,5 +1,6 @@
 /* HERO */
 .hero {
+  padding-top: 0;
   padding-bottom: 20rem;
   background-image: url("../assets/Dark\ Gradient\ background.png");
   background-position: center;
