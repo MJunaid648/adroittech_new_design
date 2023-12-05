@@ -1,61 +1,13 @@
 :root {
   --total-brands: 14;
-  --logo-height: 7rem; /* Adjusted for vertical layout */
-  --total-logos-height: calc(
-    var(--total-brands) * var(--logo-height) * 2
-  ); /* Adjusted for vertical layout */
+  --logo-height: 7rem;
+  --total-logos-height: calc(var(--total-brands) * var(--logo-height) * 2);
   --animation-duration: calc(var(--total-brands) * 1.5s);
-}
-.left-frame {
-  padding: 0.8rem 1.6rem;
-  margin-bottom: 1rem;
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 3.3rem;
-  background: rgba(115, 29, 216, 0.07);
-  font-size: 1.6rem;
-  color: var(--Primary);
-}
-.top-heading {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-.top-heading h2 {
-  font-size: 4.8rem;
-  font-weight: 400;
-}
-.top-heading p {
-  color: #b8b8b8;
-  font-size: 1.6rem;
-  text-align: right;
-}
-.heading-hr {
-  width: 100%;
-  margin: 5rem 0;
-  border: 1px solid #2a353c;
-}
-.sec-btn {
-  margin-top: 5.2rem;
-  border: 1px solid #383945;
-  align-self: flex-start;
 }
 /* HERO */
 .hero {
   padding: 0 5rem;
   padding-bottom: 10rem;
-  background-image: url("../assets/Dark\ Gradient\ background.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.hero h1 {
-  color: #fff;
-  font-size: 9.6rem;
-  letter-spacing: 1rem;
 }
 .hero > div {
   display: flex;
@@ -66,14 +18,6 @@
   flex-direction: column;
   gap: 3.2rem;
   align-items: flex-start;
-}
-.hero .text p {
-  margin-top: 1.6rem;
-  color: #b8b8b8;
-  font-family: var(--body);
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 124.11%;
 }
 .hero-sticker {
   width: 16.8rem;
@@ -135,7 +79,8 @@
 
 /* ABOUT US */
 .about-us {
-  background: #000;
+  background-image: url("../assets/about\ sec\ bg.svg");
+  background-color: #0d1317;
   padding: 4rem 5rem;
   display: flex;
   flex-direction: column;
@@ -181,14 +126,14 @@
 .stats div:nth-child(3) {
   padding: 0 4.25rem;
 }
-
 /* TECHNOLOGIES */
 .tech {
   padding: 4rem 5rem;
+  padding-top: 10rem;
   display: flex;
   justify-content: space-between;
-  background: #0d1317;
-}
+  background-image: url("../assets/carousel\ sec\ bg.svg");
+  background-color: #0d1317;}
 .tech .top-heading {
   flex-direction: column;
   align-items: flex-start;
@@ -210,6 +155,7 @@
 /* TESTIMONIALS */
 .testimonials {
   padding: 4rem 5rem;
+  padding-top: 10rem;
   background-image: url("../assets/Dark\ Gradient\ background.png");
   background-position: center;
   background-size: cover;
@@ -599,9 +545,8 @@ footer .end {
   }
   footer .top-heading {
     padding: 0 2rem;
-
   }
-  footer .top-heading div{
+  footer .top-heading div {
     gap: 1rem;
   }
   footer .top-heading div h2 {

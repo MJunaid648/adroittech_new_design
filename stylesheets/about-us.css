@@ -1,22 +1,7 @@
 /* HERO */
 .hero {
-  padding-top: 0;
-  padding-bottom: 20rem;
-  background-image: url("../assets/Dark\ Gradient\ background.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding-bottom: 32rem;
 }
-.hero h1 {
-  margin-top: 16rem;
-  font-size: 9.6rem;
-  letter-spacing: 1rem;
-}
-.hero p {
-  margin-top: 2rem;
-  font-size: 2rem;
-}
-
 /* OUR DIGITAL ODYSSEY */
 .our-digital .main {
   display: flex;
@@ -33,7 +18,9 @@
 }
 /* ADROITTECH VALUES */
 .values {
-  background: #0d1317;
+  background-image: url("../assets/sec\ bg\ right.svg");
+  background-position-x: right;
+  background-position-y: bottom;
 }
 .cards {
   width: 100%;
@@ -73,7 +60,7 @@
 }
 /* SYNERGIZING SKILLS */
 .synergizing {
-  background: #0d1317;
+  background-image: url("../assets/carousel\ sec\ bg.svg");
 }
 .synergizing .cards {
   flex-wrap: wrap;
@@ -89,7 +76,8 @@
 }
 /* TESTIMONIALS */
 .testimonials {
-  background-image: url("../assets/Dark\ Gradient\ background.png");
+  background-image: url("../assets/Dark\ Gradient\ 3.svg");
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

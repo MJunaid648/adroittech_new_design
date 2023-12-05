@@ -1,0 +1,115 @@
+/* CRAFTING OUTSTANDING INTERFACES */
+.crafting {
+  background-position-y: center;
+}
+.crafting .main {
+  display: flex;
+  gap: 12rem;
+}
+.crafting div {
+  flex: 1;
+}
+.crafting .main .txt p {
+  font-size: 2rem;
+}
+.crafting div img {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.crafting .main .txt .bullets {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+.bullets hr {
+  border: 1px solid #2a353c;
+}
+.bullet {
+  padding: 0 1.2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.bullet p {
+  font-size: 1.6rem;
+}
+/* CARDS */
+section.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 2.5rem;
+}
+.left {
+  flex: 1;
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1;
+  border-radius: 27px;
+  background: #181f23;
+  padding: 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  font-family: "Space Grotesk";
+}
+.A {
+  align-items: center;
+}
+.A img {
+  width: 23rem;
+}
+.A p {
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 26rem;
+}
+.B span {
+  color: #fff;
+  text-align: center;
+  font-size: 9.6rem;
+  font-weight: 400;
+  gap: 6rem;
+}
+.B p {
+  color: #cecece;
+  text-align: center;
+  font-size: 2rem;
+  max-width: 26rem;
+  font-weight: 400;
+}
+.C {
+  gap: 4rem;
+}
+.C p {
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+.C div {
+  display: flex;
+  justify-content: space-between;
+}
+.C span {
+  display: flex;
+  align-items: flex-end;
+}
+.C span img {
+  width: 2.4rem;
+}
+.C div > img {
+  width: 6rem;
+}
+.right {
+  flex: 1;
+  height: 100%;
+}
+.right img {
+  width: 47rem;
+  height: 46rem;
+}
