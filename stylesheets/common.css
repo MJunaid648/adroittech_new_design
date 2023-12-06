@@ -70,6 +70,9 @@ body {
   align-items: center;
   gap: 1.6rem;
 }
+a {
+  text-decoration: none;
+}
 .primary {
   background: var(--Primary);
   font-size: 2rem;
@@ -202,4 +205,8 @@ section.hero {
   section {
     padding: 2rem;
   }
+}
+.testimonials,
+.blog-section {
+  display: none !important;
 }

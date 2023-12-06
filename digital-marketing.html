@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="stylesheets/common.css" />
     <link rel="stylesheet" href="./stylesheets/digital-marketing.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
-    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <title>Digital Marketing</title>
   </head>
@@ -25,13 +25,17 @@
             /></a>
           </div>
           <ul class="links">
-            <li><a   href="./about-us.html">About</a></li>
+            <li><a href="./about-us.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
             <li>
               <a href="./software-development.html">Software Development</a>
             </li>
             <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
-            <li><a class="active" href="./digital-marketing.html">Digital Marketing</a></li>
+            <li>
+              <a class="active" href="./digital-marketing.html"
+                >Digital Marketing</a
+              >
+            </li>
             <li>
               <a class="contact-us btn secondary" href="./contact-us.html"
                 >CONTACT US</a
@@ -40,7 +44,13 @@
           </ul>
         </nav>
         <button class="hamberger" onclick="hamClick()">
-          <i class="fas fa-bars"></i>
+          <i>
+            <img
+              id="hamburgerIcon"
+              src="./assets/hamberger.svg"
+              alt="hamberger icon"
+            />
+          </i>
         </button>
         <!-- MOBILE NAVBAR -->
         <nav class="mobnav drawerClosed">
@@ -51,10 +61,14 @@
           </div>
           <hr />
           <ul>
-            <li><a  href="./about-us.html">About</a></li>
+            <li><a href="./about-us.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
             <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
-            <li><a class="active" href="./digital-marketing.html">Digital Marketing</a></li>
+            <li>
+              <a class="active" href="./digital-marketing.html"
+                >Digital Marketing</a
+              >
+            </li>
             <li>
               <a href="./software-development.html">Software Development</a>
             </li>
@@ -67,7 +81,7 @@
         </nav>
       </div>
       <h1>Digital <br />Marketing</h1>
-      <p>Crafting Digital Excellence Through Innovation and Expertise</p>
+      <p>Have your audience experience true marketing magic</p>
     </section>
     <!-- UNLOCKING -->
     <section class="unlocking">
@@ -91,14 +105,14 @@
       <div class="main">
         <div class="txt">
           <p>
-            At AdroitTech, we bring innovation and expertise to your digital
-            marketing endeavors. Our comprehensive suite of services spans
-            across social media management, content marketing, SEO optimization,
-            and pay-per-click advertising. With a dedicated team of digital
-            marketing professionals, we craft campaigns tailored to amplify your
-            brand's reach and engagement. From optimizing your online presence
-            to driving conversions, we navigate the dynamic landscape to deliver
-            measurable results.
+            Digital Marketing is all about meeting your audience where they
+            spend most of their time: on the internet. Our seasoned digital
+            marketers at Adroit Tech know just how to leverage digital channels
+            such as search engines, social media, email, and other websites to
+            connect with current and prospective audiences. With a
+            cost-effective strategy that produces measurable results, your
+            digital presence and outreach will be data-driven, every step of the
+            way!
           </p>
           <br />
           <p>
@@ -130,9 +144,9 @@
               ></object>
               <div class="txt">
                 <p>
-                  Leveraging analytics and market data, we tailor campaigns
-                  based on real-time metrics, ensuring optimal performance and
-                  ROI.
+                  Our team of expert marketers brings a wealth of industry
+                  knowledge, providing strategic insights and plans to steer
+                  your digital journey.
                 </p>
               </div>
             </div>
@@ -145,8 +159,9 @@
               ></object>
               <div class="txt">
                 <p>
-                  Iterative Design: Constantly refine and iterate based on user
-                  feedback for optimal results.
+                  We leverage the power of data analytics for every marketing
+                  channel, experimenting with campaigns based on real-time
+                  metrics to ensure optimal performance and ROI.
                 </p>
               </div>
             </div>
@@ -159,8 +174,11 @@
               ></object>
               <div class="txt">
                 <p>
-                  Benefit from our proven track record of delivering successful
-                  digital marketing campaigns across diverse industries.
+                  We play on every field in the industry, including content
+                  marketing, SEO, PPC, email marketing and complete social media
+                  management.We play on every field in the industry, including
+                  content marketing, SEO, PPC, email marketing and complete
+                  social media management.
                 </p>
               </div>
             </div>
@@ -175,7 +193,7 @@
       </div>
     </section>
     <!-- CARDS -->
-    <section class="cards">
+    <!-- <section class="cards">
       <div class="cards">
         <div class="left">
           <div class="card A">
@@ -212,7 +230,7 @@
           <img src="./assets/Chart.png" alt="growth chart" />
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- WORK PROCESS -->
     <section class="working">
       <span class="left-frame">
@@ -226,10 +244,7 @@
       </span>
       <div class="top-heading">
         <h2>Working Process</h2>
-        <p>
-          Unlocking Potential Through UI/UX Design, Software Development, and
-          Digital Marketing
-        </p>
+        <p>How we create and optimize strategies</p>
       </div>
       <hr class="heading-hr" />
       <div class="main">
@@ -241,41 +256,41 @@
             <span>01</span>
             <h3>Discovery Phase</h3>
             <p>
-              Uncover insights through in-depth research and analysis,
-              identifying target audiences, market trends, and competitors.
+              In-depth research to better understand your audience, your
+              website, the market and your competitors
             </p>
           </div>
           <div class="step">
             <span>02</span>
             <h3>Strategic Planning</h3>
             <p>
-              Develop a tailored digital marketing strategy aligned with your
-              business goals, emphasizing channels, tactics, and KPIs.
+              Develop a tailored digital marketing strategy that aligns with
+              your business goals, with complete emphasis on channels, budget,
+              and KPIs
             </p>
           </div>
           <div class="step">
             <span>03</span>
             <h3>Execution Excellence</h3>
             <p>
-              Implement the strategy with precision, deploying cohesive
-              campaigns across various digital platforms to maximize impact.
+              Putting the marketing strategy into motion, keeping all digital
+              channels in mind for maximum impact on your target audience
             </p>
           </div>
           <div class="step">
             <span>04</span>
-            <h3>Monitoring & Optimization</h3>
+            <h3>Analytics and Optimization</h3>
             <p>
-              Constantly monitor campaign performance, employing data-driven
-              insights to optimize strategies for continuous improvement.
+              Monitor campaigns using the data they bring in, and then optimize
+              them with data-driven decisions to maximize results
             </p>
           </div>
           <div class="step">
             <span>05</span>
-            <h3>Analytics & Reporting</h3>
+            <h3>Reporting</h3>
             <p>
-              Provide comprehensive analytics and reports, delivering actionable
-              insights and showcasing the tangible impact of our digital
-              efforts.
+              Visualize results in the form of charts, graphs, dashboards and
+              reports
             </p>
           </div>
         </div>
@@ -356,21 +371,19 @@
     <footer>
       <div class="top-heading">
         <div>
-          <h2>Have A Project In Mind?</h2>
+          <h2>Ready to Transform Your <br />Digital Presence?</h2>
           <p>
             Let's Collaborate for Innovative Solutions Tailored to Your Business
             Goals
           </p>
         </div>
-        <button class="btn primary sec-btn">
-          Explore All Blogs
-          <object
-            type="image/svg+xml"
-            data="./assets/Vector.svg"
-            width="24"
-            height="24"
-          ></object>
-        </button>
+        <a href="./contact-us.html">
+          <button class="btn primary sec-btn">
+            Get Started
+            <i>
+              <img src="./assets/Vector.svg" alt="" />
+            </i></button
+        ></a>
       </div>
       <hr class="heading-hr" />
       <main>
@@ -379,14 +392,8 @@
             <a href="./index.html"
               ><img class="logo" src="./assets/logo.png" alt="Adroittech"
             /></a>
-            <p>
-              Pioneering Digital Excellence, Crafting Tailored <br />
-              Solutions for Tomorrow's Success
-            </p>
+            <p>Revolutionary Digital Experiences</p>
             <div class="social-icons">
-              <a target="_blank" href=""
-                ><img src="./assets/TwitterLogo.png" alt="Adroittech Twitter"
-              /></a>
               <a
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=100094250503866"
@@ -408,17 +415,18 @@
             <p>MENU</p>
             <div class="links">
               <a href="./about-us.html">About Us</a>
-              <a href="./sd-services.html">Services</a>
-              <a href=""> Blog</a>
-              <a href="">Talent Pool</a>
+              <a href="./services.html">Services</a>
+              <a href="./UI-UX-services.html">Ui/UX Design</a>
+              <a href="./digital-marketing.html">Digital Marketing</a>
+              <a href="./software-development.html">Software Development</a>
             </div>
           </div>
           <div class="menu">
             <p>USEFUL LINKS</p>
             <div class="links">
-              <a href="">FAQ</a>
-              <a href="">Contact Us</a>
-              <a href="">Cookie Policy</a>
+              <a href="./faqs.html">FAQ</a>
+              <a href="./contact-us.html">Contact Us</a>
+              <a href="./cookie-policy">Cookie Policy</a>
             </div>
           </div>
           <div class="menu">
@@ -435,15 +443,13 @@
       <hr class="heading-hr" />
       <div class="end">
         <div class="footer-left">
-          <a href="">Contact Us</a>
-          <a href="">Cookie Policy</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="./terms-of-service.html">Terms of Service</a>
         </div>
         <p class="footer-right">Adroittech © 2023. All rights reserved.</p>
       </div>
     </footer>
     <script src="./scripts/navbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
-
   </body>
 </html>

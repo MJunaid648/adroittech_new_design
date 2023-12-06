@@ -85,8 +85,11 @@
   text-align: center;
 }
 /* WHY US */
+
 .why-us {
-  background: #0d1317;
+  background-image: url("../assets/sec\ bg\ right.svg");
+  background-position-x: right;
+
 }
 .why-us .bullets {
   display: flex;

@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/common.css" />
     <link rel="stylesheet" href="./stylesheets/contact-us.css" />
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
-    <link rel="stylesheet" href="./stylesheets/nav.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-
     <title>Contact Us</title>
   </head>
   <body>
@@ -25,7 +20,7 @@
             /></a>
           </div>
           <ul class="links">
-            <li><a  class="active" href="./about-us.html">About</a></li>
+            <li><a href="./about-us.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
             <li>
               <a href="./software-development.html">Software Development</a>
@@ -33,14 +28,22 @@
             <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
             <li><a href="./digital-marketing.html">Digital Marketing</a></li>
             <li>
-              <a class="contact-us btn secondary active" href="./contact-us.html"
+              <a
+                class="contact-us btn secondary active"
+                href="./contact-us.html"
                 >CONTACT US</a
               >
             </li>
           </ul>
         </nav>
         <button class="hamberger" onclick="hamClick()">
-          <i class="fas fa-bars"></i>
+          <i>
+            <img
+              id="hamburgerIcon"
+              src="./assets/hamberger.svg"
+              alt="hamberger icon"
+            />
+          </i>
         </button>
         <!-- MOBILE NAVBAR -->
         <nav class="mobnav drawerClosed">
@@ -59,7 +62,9 @@
               <a href="./software-development.html">Software Development</a>
             </li>
             <li>
-              <a class="contact-us btn secondary active" href="./contact-us.html"
+              <a
+                class="contact-us btn secondary active"
+                href="./contact-us.html"
                 >CONTACT US</a
               >
             </li>
@@ -150,9 +155,88 @@
         </form>
       </main>
     </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="top-heading">
+        <div>
+          <h2>Ready to Transform Your <br />Digital Presence?</h2>
+          <p>
+            Let's Collaborate for Innovative Solutions Tailored to Your Business
+            Goals
+          </p>
+        </div>
+        <a href="./contact-us.html">
+          <button class="btn primary sec-btn">
+            Get Started
+            <i>
+              <img src="./assets/Vector.svg" alt="" />
+            </i></button
+        ></a>
+      </div>
+      <hr class="heading-hr" />
+      <main>
+        <div class="social-links">
+          <div class="socials">
+            <a href="./index.html"
+              ><img class="logo" src="./assets/logo.png" alt="Adroittech"
+            /></a>
+            <p>Revolutionary Digital Experiences</p>
+            <div class="social-icons">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100094250503866"
+                ><img src="./assets/FacebookLogo.png" alt="Adroittech Facebook"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/adroit_tech__/"
+                ><img
+                  src="./assets/InstagramLogo.png"
+                  alt="Adroittech Instagram"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/96423285/admin/feed/posts/"
+                ><img src="./assets/LinkedinLogo.png" alt="Adroittech Linkedin"
+              /></a>
+            </div>
+          </div>
+          <div class="menu">
+            <p>MENU</p>
+            <div class="links">
+              <a href="./about-us.html">About Us</a>
+              <a href="./services.html">Services</a>
+              <a href="./UI-UX-services.html">Ui/UX Design</a>
+              <a href="./digital-marketing.html">Digital Marketing</a>
+              <a href="./software-development.html">Software Development</a>
+            </div>
+          </div>
+          <div class="menu">
+            <p>USEFUL LINKS</p>
+            <div class="links">
+              <a href="./faqs.html">FAQ</a>
+              <a href="./contact-us.html">Contact Us</a>
+              <a href="./cookie-policy">Cookie Policy</a>
+            </div>
+          </div>
+          <div class="menu">
+            <p>CONTACT</p>
+            <div class="links">
+              <p>+49 (0) 6229 9336659</p>
+              <p>+49 (0) 163 5689 364</p>
+              <p>info@adroittech.eu</p>
+              <p>Kart-Schmitt-Str 7 69239 <br />Neckarsteinach Germany</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <hr class="heading-hr" />
+      <div class="end">
+        <div class="footer-left">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="./terms-of-service.html">Terms of Service</a>
+        </div>
+        <p class="footer-right">Adroittech © 2023. All rights reserved.</p>
+      </div>
+    </footer>
     <script src="./scripts/navbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-
-
   </body>
 </html>

@@ -15,7 +15,7 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
 }
 nav a {
   text-decoration: none;
@@ -47,18 +47,15 @@ nav .links a.contact-us {
   cursor: pointer;
   outline: none;
   border: none;
-  font-size: 22px;
   color: white;
   display: none;
   background-color: transparent;
   position: fixed;
-  right: 3rem;
+  right: 2rem;
   top: 2.5rem;
   z-index: 100;
 }
-.hamberger:active {
-  font-size: 20px;
-}
+
 .mobnav .logo {
   align-self: flex-start;
 }
@@ -68,6 +65,19 @@ nav .links a.contact-us {
 }
 .mobnav ul {
   flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+  nav ul {
+    gap: 1.5rem;
+    /* border: 2px solid red; */
+  }
+  nav a {
+    font-size: 1.4rem !important;
+  }
+  .contact-us {
+    padding: 0.5rem 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -114,7 +124,6 @@ nav .links a.contact-us {
     display: none;
   }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   nav a {
     font-size: 2rem;
@@ -129,8 +138,5 @@ nav .links a.contact-us {
   }
 }
 .mobnav .contact-us {
-  /* padding: ; */
-  /* width: 100% !important */
-  /* border: 2px solid red; */
   padding: 1.6rem 8rem;
 }

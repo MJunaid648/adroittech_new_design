@@ -28,6 +28,9 @@ footer .top-heading div h2 {
   font-weight: 700;
   letter-spacing: 6.4px;
 }
+footer main {
+  display: block !important;
+}
 footer .social-links {
   padding: 0 5rem;
   display: flex;
@@ -117,9 +120,8 @@ footer .end {
     padding: 0 2rem;
   }
   footer .top-heading div {
-    gap: 1rem; 
-  align-items: center;
-
+    gap: 1rem;
+    align-items: center;
   }
   footer .top-heading div h2 {
     font-size: 4.8rem;

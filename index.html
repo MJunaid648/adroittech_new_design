@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="stylesheets/common.css" />
     <link rel="stylesheet" href="stylesheets/index.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
-    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Adroittech Homeage</title>
   </head>
   <body>
     <div class="hero">
+      <!-- Navbar -->
       <div class="navigation">
-        <!-- Navbar -->
         <nav>
           <div class="logo">
             <a href="./index.html"
@@ -39,7 +39,13 @@
           </ul>
         </nav>
         <button class="hamberger" onclick="hamClick()">
-          <i class="fas fa-bars"></i>
+          <i>
+            <img
+              id="hamburgerIcon"
+              src="./assets/hamberger.svg"
+              alt="hamberger icon"
+            />
+          </i>
         </button>
         <!-- MOBILE NAVBAR -->
         <nav class="mobnav drawerClosed">
@@ -73,18 +79,20 @@
       <div class="hero-bottom">
         <div class="text">
           <p>
-            Empowering Your Online Business withAI, CI/CD tools and Impactful
-            <br />UI/UX Designs
+            Impactful UI/UX designs, Software development with CI/CD tools
+            <br />
+            and Data-driven Digital Marketing
           </p>
-          <button class="btn primary">
-            Book a call
-            <object
-              type="image/svg+xml"
-              data="./assets/Vector.svg"
-              width="24"
-              height="24"
-            ></object>
-          </button>
+          <a href="./contact-us.html">
+            <button class="btn primary">
+              Book a call
+              <object
+                type="image/svg+xml"
+                data="./assets/Vector.svg"
+                width="24"
+                height="24"
+              ></object></button
+          ></a>
         </div>
         <img
           class="hero-sticker"
@@ -119,16 +127,12 @@
           <p>01.</p>
           <div class="card-heading">
             <h3>UI UX <br />Design</h3>
-            <object
-              type="image/svg+xml"
-              data="./assets/arrowUpRight.svg"
-            ></object>
+            <a href="./UI-UX-services.html">
+              <img src="./assets/arrowUpRight.svg" alt="" />
+            </a>
           </div>
           <hr />
-          <p>
-            Boost User Experiences: Crafting Engaging Interfaces that Captivate,
-            Connect, and Inspire.
-          </p>
+          <p>Craft Engaging Interfaces that Captivate, Connect, and Inspire.</p>
         </div>
         <div class="card">
           <object
@@ -142,16 +146,14 @@
               Software <br />
               Development
             </h3>
-            <object
-              type="image/svg+xml"
-              data="./assets/arrowUpRight.svg"
-            ></object>
+            <a href="./software-development.html">
+              <img src="./assets/arrowUpRight.svg" alt="" />
+            </a>
           </div>
           <hr />
-
           <p>
-            Boost User Experiences: Crafting Engaging Interfaces that Captivate,
-            Connect, and Inspire.
+            Leverage the power of CI/CD tools to develop dynamic mobile and web
+            applications
           </p>
         </div>
         <div class="card">
@@ -166,27 +168,24 @@
               Digital <br />
               Marketing
             </h3>
-            <object
-              type="image/svg+xml"
-              data="./assets/arrowUpRight.svg"
-            ></object>
+            <a href="./digital-marketing.html">
+              <img src="./assets/arrowUpRight.svg" alt="" />
+            </a>
           </div>
           <hr />
           <p>
-            Boost User Experiences: Crafting Engaging Interfaces that Captivate,
-            Connect, and Inspire.
+            Impactful strategies for amplified sales and unforgettable brand
+            image
           </p>
         </div>
       </div>
-      <button class="btn secondary sec-btn">
-        Explore All Services
-        <object
-          type="image/svg+xml"
-          data="./assets/Vector.svg"
-          width="24"
-          height="24"
-        ></object>
-      </button>
+      <a href="./services.html">
+        <button class="btn secondary sec-btn">
+          Explore All Services
+          <i>
+            <img src="./assets/Vector.svg" alt="" />
+          </i></button
+      ></a>
     </div>
 
     <!--About Us STATS -->
@@ -201,14 +200,13 @@
         Our Services
       </span>
       <p>
-        Crafting Innovative Digital Solutions with AI, ML, and Data Analytics.
-        Our expert team ensures optimal productivity through streamlined
-        operations, while personalized digital marketing strategies drive
-        targeted traffic and boost sales. Choose us for unparalleled growth in
-        the online marketplace.
+        Adroit Tech was built to be a one-stop destination for all digital
+        solutions. Be they compelling interface designs, applications and
+        services that transform lives, or data-driven marketing strategies that
+        engage and amaze; Adroit Tech does it all. Choose us as your strategic
+        partner for exceptional growth in the digital world!
       </p>
-      <hr class="heading-hr" />
-      <div class="stats">
+      <!-- <div class="stats">
         <div>
           <p>500 <span>+</span></p>
           <p class="info">Projects Completed</p>
@@ -221,16 +219,15 @@
           <p>5 <span>+</span></p>
           <p class="info">Years of Operation</p>
         </div>
-      </div>
-      <button class="btn secondary sec-btn">
-        Learn more
-        <object
-          type="image/svg+xml"
-          data="./assets/Vector.svg"
-          width="24"
-          height="24"
-        ></object>
-      </button>
+      </div> -->
+      <a href="./services.html">
+        <button class="btn secondary sec-btn">
+          Learn More
+          <i>
+            <img src="./assets/Vector.svg" alt="" />
+          </i></button
+      ></a>
+      <!-- <hr class="heading-hr" /> -->
     </div>
 
     <!-- TECHNOLOGIES -->
@@ -1050,55 +1047,8 @@
       </div>
     </div>
     <!-- TESTIMONIALS -->
-    <div class="testimonials">
-      <span class="left-frame">
-        <object
-          type="image/svg+xml"
-          data="./assets/ArrowDownRight.svg"
-          width="24"
-          height="24"
-        ></object>
-        Testimonials
-      </span>
-      <div class="top-heading">
-        <h2>Words from Our Satisfied Clients</h2>
-        <p>
-          Discover the Success Stories and Experiences Shared by Those Who
-          <br />
-          Chose AdroitTech
-        </p>
-      </div>
-      <hr class="heading-hr" />
-      <!-- CAROUSEL -->
-      <div class="content-wrapper">
-        <div id="reviewWrap" class="review-wrap">
-          <div id="description"></div>
-          <div class="lower">
-            <div class="client-info">
-              <div id="imgDiv"></div>
-              <div class="text">
-                <div id="personName"></div>
-                <div id="profession"></div>
-              </div>
-            </div>
-            <div class="btns">
-              <div class="arrow" id="leftArrow">
-                <iconify-icon
-                  icon="material-symbols:arrow-left-alt"
-                ></iconify-icon>
-              </div>
-              <div class="arrow" id="rightArrow">
-                <iconify-icon
-                  icon="material-symbols:arrow-right-alt"
-                ></iconify-icon>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- BLOG SECTION -->
-    <div class="blog-section">
+    <!-- <div class="blog-section">
       <span class="left-frame">
         <object
           type="image/svg+xml"
@@ -1164,7 +1114,7 @@
           height="24"
         ></object>
       </button>
-    </div>
+    </div> -->
     <!-- FOOTER -->
     <footer>
       <div class="top-heading">
@@ -1175,15 +1125,13 @@
             Goals
           </p>
         </div>
-        <button class="btn primary sec-btn">
-          Explore All Blogs
-          <object
-            type="image/svg+xml"
-            data="./assets/Vector.svg"
-            width="24"
-            height="24"
-          ></object>
-        </button>
+        <a href="./contact-us.html">
+          <button class="btn primary sec-btn">
+            Get Started
+            <i>
+              <img src="./assets/Vector.svg" alt="" />
+            </i></button
+        ></a>
       </div>
       <hr class="heading-hr" />
       <main>
@@ -1192,14 +1140,8 @@
             <a href="./index.html"
               ><img class="logo" src="./assets/logo.png" alt="Adroittech"
             /></a>
-            <p>
-              Pioneering Digital Excellence, Crafting Tailored <br />
-              Solutions for Tomorrow's Success
-            </p>
+            <p>Revolutionary Digital Experiences</p>
             <div class="social-icons">
-              <a target="_blank" href=""
-                ><img src="./assets/TwitterLogo.png" alt="Adroittech Twitter"
-              /></a>
               <a
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=100094250503866"
@@ -1221,17 +1163,18 @@
             <p>MENU</p>
             <div class="links">
               <a href="./about-us.html">About Us</a>
-              <a href="./sd-services.html">Services</a>
-              <a href=""> Blog</a>
-              <a href="">Talent Pool</a>
+              <a href="./services.html">Services</a>
+              <a href="./UI-UX-services.html">Ui/UX Design</a>
+              <a href="./digital-marketing.html">Digital Marketing</a>
+              <a href="./software-development.html">Software Development</a>
             </div>
           </div>
           <div class="menu">
             <p>USEFUL LINKS</p>
             <div class="links">
-              <a href="">FAQ</a>
-              <a href="">Contact Us</a>
-              <a href="">Cookie Policy</a>
+              <a href="./faqs.html">FAQ</a>
+              <a href="./contact-us.html">Contact Us</a>
+              <a href="./cookie-policy">Cookie Policy</a>
             </div>
           </div>
           <div class="menu">
@@ -1248,17 +1191,15 @@
       <hr class="heading-hr" />
       <div class="end">
         <div class="footer-left">
-          <a href="">Contact Us</a>
-          <a href="">Cookie Policy</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="./terms-of-service.html">Terms of Service</a>
         </div>
         <p class="footer-right">Adroittech © 2023. All rights reserved.</p>
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="main.js"></script>
     <script src="./scripts/navbar.js"></script>
-
 
     <script
       defer

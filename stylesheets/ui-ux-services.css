@@ -1,28 +1,28 @@
-/* CRAFTING OUTSTANDING INTERFACES */
-.crafting .main {
+/* DESIGNING OUTSTANDING INTERFACES */
+.designing .main {
   display: flex;
   gap: 12rem;
 }
-.crafting div {
+.designing div {
   flex: 1;
 }
-.crafting .main .txt p {
+.designing .main .txt p {
   font-size: 2rem;
 }
-.crafting div img {
+.designing div img {
   border-radius: 16px;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.crafting > img {
+.designing > img {
   border-radius: 16px;
   margin-top: 8rem;
   width: 100%;
   height: 64rem;
   object-fit: cover;
 }
-.crafting .main .txt .bullets {
+.designing .main .txt .bullets {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -112,6 +112,9 @@
   gap: 2rem;
   align-items: center;
 }
+.deliverables .bullets hr.mob {
+  display: none;
+}
 .bullet h3 {
   font-size: 3.6rem;
   margin-bottom: 0.8rem;
@@ -134,17 +137,17 @@
     margin-bottom: 8rem;
     font-size: 1.7rem;
   }
-  /* CRAFTING */
-  .crafting .main {
+  /* DESIGNING */
+  .designing .main {
     gap: 6rem;
   }
-  .crafting .main p {
+  .designing .main p {
     font-size: 1.6rem;
   }
-  .crafting .main > div:nth-child(2) {
+  .designing .main > div:nth-child(2) {
     display: none;
   }
-  .crafting > img {
+  .designing > img {
     margin-top: 5rem;
   }
   /* WORKING PROCESS */
@@ -190,15 +193,15 @@
     margin-bottom: 8rem;
     font-size: 1.7rem;
   }
-  /* CRAFTING */
-  .crafting .main {
+  /* DESIGNING */
+  .ux .main {
     flex-direction: column-reverse;
     gap: 4.5rem;
   }
-  .crafting p {
+  .ux p {
     font-size: 1.4rem;
   }
-  .crafting > img {
+  .ux > img {
     margin-top: 18rem;
     margin-bottom: 3rem;
   }

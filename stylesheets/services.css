@@ -6,7 +6,7 @@
 }
 /* HERO */
 .hero {
-  padding-bottom: 28rem;
+  padding-bottom: 32rem;
 }
 /* UI/UX DESIGN SERVICE */
 .ux .main {
@@ -353,6 +353,17 @@ ul.brands li.brand-logo {
     margin-bottom: 5rem;
     text-align: center;
     font-size: 1.4rem;
+  }
+  .ux .main {
+    flex-direction: column-reverse;
+    gap: 4.5rem;
+  }
+  .ux p {
+    font-size: 1.4rem;
+  }
+  .ux > img {
+    margin-top: 18rem;
+    margin-bottom: 3rem;
   }
   /* TECHNOLOGIES */
   .tech {
