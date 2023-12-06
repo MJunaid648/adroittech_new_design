@@ -1,24 +1,24 @@
-/* CRAFTING OUTSTANDING INTERFACES */
-.crafting {
+/* UNLOCKING OUTSTANDING INTERFACES */
+.unlocking {
   background-position-y: center;
 }
-.crafting .main {
+.unlocking .main {
   display: flex;
   gap: 12rem;
 }
-.crafting div {
+.unlocking div {
   flex: 1;
 }
-.crafting .main .txt p {
+.unlocking .main .txt p {
   font-size: 2rem;
 }
-.crafting div img {
+.unlocking div img {
   border-radius: 16px;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.crafting .main .txt .bullets {
+.unlocking .main .txt .bullets {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -37,10 +37,9 @@
   font-size: 1.6rem;
 }
 /* CARDS */
-section.cards {
+.cards {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
   gap: 2.5rem;
 }
 .left {
@@ -59,6 +58,11 @@ section.cards {
   gap: 6rem;
   font-family: "Space Grotesk";
 }
+.card p {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
 .A {
   align-items: center;
 }
@@ -67,49 +71,340 @@ section.cards {
 }
 .A p {
   font-size: 24px;
-  font-weight: 400;
   max-width: 26rem;
 }
 .B span {
-  color: #fff;
-  text-align: center;
   font-size: 9.6rem;
-  font-weight: 400;
   gap: 6rem;
 }
 .B p {
   color: #cecece;
-  text-align: center;
   font-size: 2rem;
   max-width: 26rem;
-  font-weight: 400;
 }
 .C {
   gap: 4rem;
 }
 .C p {
   font-size: 3.6rem;
-  font-weight: 400;
 }
 .C div {
   display: flex;
   justify-content: space-between;
 }
-.C span {
+.C a {
   display: flex;
   align-items: flex-end;
+  text-decoration: none;
+  color: #fff;
 }
-.C span img {
+.C a:nth-child(1) img {
   width: 2.4rem;
 }
-.C div > img {
+.C img.rocket {
   width: 6rem;
 }
 .right {
   flex: 1;
   height: 100%;
 }
+.right p {
+  font-size: 36px;
+  text-align: left;
+}
 .right img {
-  width: 47rem;
-  height: 46rem;
+  width: 100%;
+  object-fit: contain;
+}
+/* WORKING PROCESS */
+.working {
+  background-position-y: center;
+}
+.working .main {
+  display: flex;
+  gap: 2rem;
+}
+.working .main div {
+  flex: 1;
+}
+.working .main div img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.step {
+  padding: 2.4rem;
+  border-radius: 22px;
+  background: #181f23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step:first-child {
+  border: 0.5px solid var(--Light-blue, #aed9e0);
+  background: #1c252a;
+}
+.step span {
+  color: #731dd8;
+  font-size: 2rem;
+}
+.step h3 {
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 500;
+}
+.step p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* WHY US */
+.why-us {
+}
+.why-us .bullets {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+.bullets hr {
+  border: 1px solid #2a353c;
+}
+.bullet {
+  padding: 0 1.2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.bullet h3 {
+  font-size: 3.6rem;
+}
+.bullet p {
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  /* HERO */
+  .hero {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  .hero h1 {
+    margin-top: 8rem;
+    font-size: 6.8rem;
+    letter-spacing: 0.7rem;
+  }
+  .hero p {
+    margin-bottom: 8rem;
+    font-size: 1.7rem;
+  }
+  /* UNLOCKING */
+  .unlocking .main {
+    gap: 6rem;
+    flex-direction: column-reverse;
+  }
+  .unlocking .main p {
+    font-size: 1.6rem;
+  }
+  .unlocking .main > div:nth-child(2) {
+    /* display: none; */
+  }
+  .unlocking > img {
+    margin-top: 5rem;
+  }
+  /* CARDS */
+  .cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .left {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding: 2rem;
+    gap: 4rem;
+  }
+  .A img {
+    width: 18rem;
+  }
+  .A p {
+    font-size: 1.8rem;
+  }
+  .B span {
+    font-size: 8rem;
+    gap: 4rem;
+  }
+  .B p {
+    color: #cecece;
+    font-size: 2rem;
+    max-width: 26rem;
+  }
+  .C {
+    gap: 4rem;
+  }
+  .C p {
+    font-size: 3.6rem;
+  }
+  .C div {
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+  }
+  .C a {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: #fff;
+  }
+  .C a:nth-child(1) img {
+    width: 2.4rem;
+  }
+  .C img.rocket {
+    width: 6rem;
+  }
+  .right {
+    flex: 1;
+    height: 100%;
+  }
+  .right p {
+    font-size: 36px;
+    text-align: left;
+  }
+  .right img {
+    width: 100%;
+    object-fit: contain;
+  }
+  /* WORKING PROCESS */
+  .working .main {
+    gap: 1rem;
+  }
+  .working .main div {
+    flex: 1;
+  }
+  .working .main div img {
+    object-fit: cover;
+  }
+  /* WHY US */
+  .bullet h3 {
+    font-size: 3rem;
+  }
+  .bullet p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* HERO */
+  .hero {
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero h1 {
+    margin-top: 6rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .hero p {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  /* CARDS */
+  .cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .left {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding: 2rem;
+    gap: 4rem;
+  }
+  .A img {
+    width: 18rem;
+  }
+  .A p {
+    font-size: 1.8rem;
+  }
+  .B span {
+    font-size: 8rem;
+    gap: 4rem;
+  }
+  .B p {
+    color: #cecece;
+    font-size: 2rem;
+    max-width: 26rem;
+  }
+  .C {
+    gap: 4rem;
+  }
+  .C p {
+    font-size: 3.6rem;
+  }
+  .C div {
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+  }
+  .C a {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: #fff;
+  }
+  .C a:nth-child(1) img {
+    width: 2.4rem;
+  }
+  .C img.rocket {
+    width: 6rem;
+  }
+  .right {
+    flex: 1;
+    height: 100%;
+  }
+  .right p {
+    font-size: 36px;
+    text-align: left;
+  }
+  .right img {
+    width: 100%;
+    object-fit: contain;
+  }
+  /* UNLOCKING */
+  .unlocking .main {
+    flex-direction: column-reverse;
+    gap: 4.5rem;
+  }
+  .unlocking p {
+    font-size: 1.4rem;
+  }
+  /* WORKING PROCESS */
+  .working {
+    padding-bottom: 5rem;
+  }
+  .working .main {
+    flex-direction: column-reverse;
+  }
+  .step h3 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  /* WHY US */
+  .why-us .bullets {
+    gap: 1.6rem;
+  }
+  .bullet h3 {
+    font-size: 2.4rem;
+  }
+  .bullet p {
+    font-size: 1.4rem;
+  }
 }

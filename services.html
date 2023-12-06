@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/common.css" />
-    <link rel="stylesheet" href="stylesheets/index.css" />
+    <link rel="stylesheet" href="stylesheets/services.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
-    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
-    <title>Adroittech Homeage</title>
+
+    <title>Services</title>
   </head>
   <body>
-    <div class="hero">
+    <section class="hero">
       <div class="navigation">
         <!-- Navbar -->
         <nav>
@@ -25,7 +26,7 @@
           </div>
           <ul class="links">
             <li><a href="./about-us.html">About</a></li>
-            <li><a href="./services.html">Services</a></li>
+            <li><a class="active" href="./services.html">Services</a></li>
             <li>
               <a href="./software-development.html">Software Development</a>
             </li>
@@ -51,7 +52,7 @@
           <hr />
           <ul>
             <li><a href="./about-us.html">About</a></li>
-            <li><a href="./services.html">Services</a></li>
+            <li><a class="active" href="./services.html">Services</a></li>
             <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
             <li><a href="./digital-marketing.html">Digital Marketing</a></li>
             <li>
@@ -65,35 +66,11 @@
           </ul>
         </nav>
       </div>
-      <h1>
-        Elevate Your <br />
-        Digital Presence with <br />
-        AdroitTech
-      </h1>
-      <div class="hero-bottom">
-        <div class="text">
-          <p>
-            Empowering Your Online Business withAI, CI/CD tools and Impactful
-            <br />UI/UX Designs
-          </p>
-          <button class="btn primary">
-            Book a call
-            <object
-              type="image/svg+xml"
-              data="./assets/Vector.svg"
-              width="24"
-              height="24"
-            ></object>
-          </button>
-        </div>
-        <img
-          class="hero-sticker"
-          src="./assets/Sticker.png"
-          alt="Custom Software Development"
-        />
-      </div>
-    </div>
-    <div class="digital-offerings">
+      <h1>Services</h1>
+      <p>Crafting Digital Excellence Through Innovation and Expertise</p>
+    </section>
+    <!-- UI/UX DESIGN SERVICE -->
+    <section class="ux">
       <span class="left-frame">
         <object
           type="image/svg+xml"
@@ -104,93 +81,38 @@
         Our Services
       </span>
       <div class="top-heading">
-        <h2>Innovative Digital <br />Offerings</h2>
-        <p>Crafting Unique Solutions for a Dynamic Digital World</p>
+        <h2>UI/UX Design Service</h2>
+        <p>Revolutionizing Your Brand's Presence in the Digital Landscape</p>
       </div>
       <hr class="heading-hr" />
-
-      <div class="cards">
-        <div class="card">
-          <object
-            class="card-header"
-            type="image/svg+xml"
-            data="./assets//UI UX icon.svg"
-          ></object>
-          <p>01.</p>
-          <div class="card-heading">
-            <h3>UI UX <br />Design</h3>
+      <div class="main">
+        <div class="txt">
+          <p>
+            Enhance user experiences and boost engagement with our cutting-edge
+            UI/UX design services. Our expert team combines creativity and
+            functionality to craft interfaces that leave a lasting impact.
+            Uncover the art of seamless design with our UI/UX expertise.
+          </p>
+          <button class="btn primary sec-btn">
+            Explore UI UX Design
             <object
               type="image/svg+xml"
-              data="./assets/arrowUpRight.svg"
+              data="./assets/Vector.svg"
+              width="24"
+              height="24"
             ></object>
-          </div>
-          <hr />
-          <p>
-            Boost User Experiences: Crafting Engaging Interfaces that Captivate,
-            Connect, and Inspire.
-          </p>
+          </button>
         </div>
-        <div class="card">
-          <object
-            class="card-header"
-            type="image/svg+xml"
-            data="./assets/software dev icon.svg"
-          ></object>
-          <p>02.</p>
-          <div class="card-heading">
-            <h3>
-              Software <br />
-              Development
-            </h3>
-            <object
-              type="image/svg+xml"
-              data="./assets/arrowUpRight.svg"
-            ></object>
-          </div>
-          <hr />
-
-          <p>
-            Boost User Experiences: Crafting Engaging Interfaces that Captivate,
-            Connect, and Inspire.
-          </p>
-        </div>
-        <div class="card">
-          <object
-            class="card-header"
-            type="image/svg+xml"
-            data="./assets/digital marketing icon.svg"
-          ></object>
-          <p>03.</p>
-          <div class="card-heading">
-            <h3>
-              Digital <br />
-              Marketing
-            </h3>
-            <object
-              type="image/svg+xml"
-              data="./assets/arrowUpRight.svg"
-            ></object>
-          </div>
-          <hr />
-          <p>
-            Boost User Experiences: Crafting Engaging Interfaces that Captivate,
-            Connect, and Inspire.
-          </p>
+        <div>
+          <img
+            src="./assets/ux design service.jpg"
+            alt="Software Development"
+          />
         </div>
       </div>
-      <button class="btn secondary sec-btn">
-        Explore All Services
-        <object
-          type="image/svg+xml"
-          data="./assets/Vector.svg"
-          width="24"
-          height="24"
-        ></object>
-      </button>
-    </div>
-
-    <!--About Us STATS -->
-    <div class="about-us">
+    </section>
+    <!-- SOFTWARE DEVELOPMENT SERVICE -->
+    <section class="ux">
       <span class="left-frame">
         <object
           type="image/svg+xml"
@@ -200,39 +122,73 @@
         ></object>
         Our Services
       </span>
-      <p>
-        Crafting Innovative Digital Solutions with AI, ML, and Data Analytics.
-        Our expert team ensures optimal productivity through streamlined
-        operations, while personalized digital marketing strategies drive
-        targeted traffic and boost sales. Choose us for unparalleled growth in
-        the online marketplace.
-      </p>
+      <div class="top-heading">
+        <h2>Software Development Service</h2>
+        <p>Revolutionizing Your Brand's Presence in the Digital Landscape</p>
+      </div>
       <hr class="heading-hr" />
-      <div class="stats">
-        <div>
-          <p>500 <span>+</span></p>
-          <p class="info">Projects Completed</p>
+      <div class="main">
+        <div class="txt">
+          <p>
+            Enhance user experiences and boost engagement with our cutting-edge
+            UI/UX design services. Our expert team combines creativity and
+            functionality to craft interfaces that leave a lasting impact.
+            Uncover the art of seamless design with our UI/UX expertise.
+          </p>
+          <button class="btn primary sec-btn">
+            Explore Software Development
+            <object
+              type="image/svg+xml"
+              data="./assets/Vector.svg"
+              width="24"
+              height="24"
+            ></object>
+          </button>
         </div>
         <div>
-          <p>95% <span>+</span></p>
-          <p class="info">Client Satisfaction</p>
-        </div>
-        <div>
-          <p>5 <span>+</span></p>
-          <p class="info">Years of Operation</p>
+          <img src="./assets/sd service.jpg" alt="Software Development" />
         </div>
       </div>
-      <button class="btn secondary sec-btn">
-        Learn more
+    </section>
+    <!-- DIGITAL MARKETING SERVICE -->
+    <section class="ux">
+      <span class="left-frame">
         <object
           type="image/svg+xml"
-          data="./assets/Vector.svg"
+          data="./assets/ArrowDownRight.svg"
           width="24"
           height="24"
         ></object>
-      </button>
-    </div>
-
+        Our Services
+      </span>
+      <div class="top-heading">
+        <h2>Digital Marketing Service</h2>
+        <p>Revolutionizing Your Brand's Presence in the Digital Landscape</p>
+      </div>
+      <hr class="heading-hr" />
+      <div class="main">
+        <div class="txt">
+          <p>
+            Enhance user experiences and boost engagement with our cutting-edge
+            UI/UX design services. Our expert team combines creativity and
+            functionality to craft interfaces that leave a lasting impact.
+            Uncover the art of seamless design with our UI/UX expertise.
+          </p>
+          <button class="btn primary sec-btn">
+            Explore Digital Marketing
+            <object
+              type="image/svg+xml"
+              data="./assets/Vector.svg"
+              width="24"
+              height="24"
+            ></object>
+          </button>
+        </div>
+        <div>
+          <img src="./assets/dm service.jpg" alt="Software Development" />
+        </div>
+      </div>
+    </section>
     <!-- TECHNOLOGIES -->
     <div class="tech">
       <div class="top-heading">
@@ -1256,9 +1212,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="main.js"></script>
     <script src="./scripts/navbar.js"></script>
-
+    <script src="main.js"></script>
 
     <script
       defer

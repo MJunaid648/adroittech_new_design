@@ -6,22 +6,65 @@
     <link rel="stylesheet" href="stylesheets/common.css" />
     <link rel="stylesheet" href="./stylesheets/about-us.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <link rel="stylesheet" href="./stylesheets/nav.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
     <title>About Us</title>
   </head>
   <body>
     <section class="hero">
-      <nav>
-        <a href="./index.html"
-          ><img src="assets/logo.png" alt="Adroittech"
-        /></a>
-        <ul>
-          <li><a href="./about-us.html">About</a></li>
-          <li><a href="./sd-services.html">Services</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Talent Pool</a></li>
-          <li><button class="btn secondary">Contact Us</button></li>
-        </ul>
-      </nav>
+      <div class="navigation">
+        <!-- Navbar -->
+        <nav>
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./assets/logo.png" alt="Adroittech logo"
+            /></a>
+          </div>
+          <ul class="links">
+            <li><a  class="active" href="./about-us.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li>
+              <a href="./software-development.html">Software Development</a>
+            </li>
+            <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
+            <li><a href="./digital-marketing.html">Digital Marketing</a></li>
+            <li>
+              <a class="contact-us btn secondary" href="./contact-us.html"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="hamberger" onclick="hamClick()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- MOBILE NAVBAR -->
+        <nav class="mobnav drawerClosed">
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./assets/logo.png" alt="Adroittech logo"
+            /></a>
+          </div>
+          <hr />
+          <ul>
+            <li><a class="active" href="./about-us.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
+            <li><a href="./digital-marketing.html">Digital Marketing</a></li>
+            <li>
+              <a href="./software-development.html">Software Development</a>
+            </li>
+            <li>
+              <a class="contact-us btn secondary" href="./contact-us.html"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
       <h1>About AdroitTech</h1>
       <p>Crafting Digital Excellence Through Innovation and Expertise</p>
     </section>
@@ -325,6 +368,9 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="main.js"></script>
+    <script src="./scripts/navbar.js"></script>
+
+
 
     <script
       defer

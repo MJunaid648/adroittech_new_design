@@ -1,48 +1,46 @@
-/* CRAFTING OUTSTANDING INTERFACES */
-.crafting .main {
+.hero {
+  padding-bottom: 20rem;
+  background-image: url("../assets/Dark\ Gradient\ background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  margin-top: 10rem;
+  font-size: 9.6rem;
+  letter-spacing: 1rem;
+}
+.hero p {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+/* SOFTWARE DEVELOPMENT EXCELLENCE */
+.sde .main {
   display: flex;
   gap: 12rem;
 }
-.crafting div {
+.sde div {
   flex: 1;
 }
-.crafting .main .txt p {
+.sde .main p {
   font-size: 2rem;
 }
-.crafting div img {
+.sde div img {
   border-radius: 16px;
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.crafting > img {
+.sde > img {
   border-radius: 16px;
   margin-top: 8rem;
   width: 100%;
   height: 64rem;
   object-fit: cover;
 }
-.crafting .main .txt .bullets {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 2rem;
-}
-.bullets hr {
-  border: 1px solid #2a353c;
-}
-.bullet {
-  padding: 0 1.2rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-.bullet p {
-  font-size: 1.6rem;
-}
 /* WORKING PROCESS */
 .working {
-  background-position-y: center;
+  background: #0d1317;
 }
 .working .main {
   display: flex;
@@ -86,35 +84,27 @@
   font-size: 1.5rem;
   text-align: center;
 }
-/* DELIVERABLES */
-.deliverables .main {
-  border-radius: 22px;
-  background: rgba(24, 31, 35, 0.5);
-  padding: 2.4rem;
-  display: flex;
-  gap: 5.6rem;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+/* WHY US */
+.why-us {
+  background: #0d1317;
 }
-.bullets {
+.why-us .bullets {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 .bullets hr {
   border: 1px solid #2a353c;
-  width: 96%;
-  align-self: center;
 }
 .bullet {
+  padding: 0 1.2rem;
   display: flex;
   gap: 2rem;
   align-items: center;
 }
 .bullet h3 {
   font-size: 3.6rem;
-  margin-bottom: 0.8rem;
 }
 .bullet p {
   font-size: 1.6rem;
@@ -134,17 +124,18 @@
     margin-bottom: 8rem;
     font-size: 1.7rem;
   }
-  /* CRAFTING */
-  .crafting .main {
+
+  /* SOFTWARE DEVELOPMENT EXCELLENCE */
+  .sde .main {
     gap: 6rem;
   }
-  .crafting .main p {
+  .sde.main p {
     font-size: 1.6rem;
   }
-  .crafting .main > div:nth-child(2) {
+  .sde .main div:nth-child(2) {
     display: none;
   }
-  .crafting > img {
+  .sde > img {
     margin-top: 5rem;
   }
   /* WORKING PROCESS */
@@ -157,76 +148,56 @@
   .working .main div img {
     object-fit: cover;
   }
-  .deliverables {
-    padding-bottom: 9rem;
+
+  .step h3 {
+    font-size: 3rem;
   }
-  .deliverables .main {
-    flex-direction: column;
-    gap: 0;
-  }
-  .deliverables .bullets {
-    gap: 1.6rem;
-  }
-  .deliverables .bullets hr.mob {
-    display: block;
-  }
+  /* WHY US */
   .bullet h3 {
     font-size: 3rem;
   }
   .bullet p {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (max-width: 480px) {
+  /* HERO */
   .hero {
-    gap: 2rem;
     padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
   }
   .hero h1 {
-    font-size: 6.8rem;
-    letter-spacing: 0.7rem;
+    margin-top: 6rem;
+    font-size: 4rem;
+    text-align: center;
   }
   .hero p {
-    margin-bottom: 8rem;
-    font-size: 1.7rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1.4rem;
   }
-  /* CRAFTING */
-  .crafting .main {
+  /* SOFTWARE DEVELOPMENT EXCELLENCE */
+  .sde .main {
     flex-direction: column-reverse;
     gap: 4.5rem;
   }
-  .crafting p {
+  .sde .main p {
     font-size: 1.4rem;
   }
-  .crafting > img {
-    margin-top: 18rem;
-    margin-bottom: 3rem;
+  .sde button {
+    font-size: 1.6rem;
+  }
+  .sde > img {
+    margin-top: 3rem;
   }
   /* WORKING PROCESS */
-  .working {
-    padding-bottom: 15rem;
-  }
   .working .main {
     flex-direction: column-reverse;
   }
-  .step h3 {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 500;
-  }
-  /* DELIVERABLES */
-  .deliverables {
-    padding-bottom: 9rem;
-  }
-  .deliverables .main {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .deliverables .bullets {
+  /* WHY US */
+  .why-us .bullets {
     gap: 1.6rem;
-  }
-  .deliverables .bullets hr.mob {
-    display: block;
   }
   .bullet h3 {
     font-size: 2.4rem;

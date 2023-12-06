@@ -120,42 +120,6 @@ section.hero {
   margin-top: 2rem;
   font-size: 2rem;
 }
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid #4b4b4b;
-  padding: 1.6rem 0;
-}
-nav img {
-  width: 15.1rem;
-  height: 3.1rem;
-  cursor: pointer;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-}
-nav li {
-  border-bottom: 1px solid transparent;
-}
-nav a {
-  text-decoration: none;
-  color: #fff;
-}
-nav li:hover {
-  border-bottom: 1px solid #fff;
-}
-nav li:nth-child(5) {
-  border-bottom: 1px solid transparent;
-}
-nav button {
-  background: #181f23 !important;
-  border: 1px solid #383945 !important;
-}
 
 @media only screen and (max-width: 768px) {
   .top-heading {
@@ -187,15 +151,9 @@ nav button {
   section {
     padding: 2rem;
   }
-  nav ul {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 480px) {
-  nav ul {
-    display: none;
-  }
   .top-heading {
     flex-direction: column;
     align-items: flex-start;
