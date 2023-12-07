@@ -89,19 +89,30 @@ function sendEmail() {
   Message:
   ${message}
 `;
+
+
+emailjs.init("RRvdcVP6c1cFeuKq0");
+emailjs.send("service_p5ossgn","template_h87fhdo",{
+  message: emailBody
+
+}).then(function(res){
+  showModal();
+  console.log(res.status)
+  // alert("success", res.status)
+})
   // Send the email using Email.js
-  Email.send({
-    Host: "smtp.elasticemail.com",
-    Username: "info@adroittech.eu",
-    Password: "4CD0C7129E3858D04305EBC051E0AB2AA49F",
-    To: "info@adroittech.eu",
-    From: email,
-    Subject: "Contact US Email",
-    Body: emailBody,
-  }).then(function () {
-    showModal();
-    console.log(message);
-  });
+  // Email.send({
+  //   Host: "smtp.elasticemail.com",
+  //   Username: "info@adroittech.eu",
+  //   Password: "4CD0C7129E3858D04305EBC051E0AB2AA49F",
+  //   To: "info@adroittech.eu",
+  //   From: email,
+  //   Subject: "Contact US Email",
+  //   Body: emailBody,
+  // }).then(function () {
+  //   showModal();
+  //   console.log(message);
+  // });
 }
 
 function displayErrorMessage(elementId, message) {
