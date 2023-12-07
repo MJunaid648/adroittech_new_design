@@ -125,3 +125,86 @@ form button {
     font-size: 1.6rem;
   }
 }
+
+
+/* Modal */
+.modal {
+  position: fixed;
+  z-index: 500;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+}
+
+.message-box {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 35vw;
+  padding: 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.message-box h1 {
+  font-size: 2.5vw;
+}
+.message-box p {
+  font-size: 1.2vw;
+}
+
+.message-box button {
+  padding: 0.8vw 1.2vw;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+}
+.show {
+  display: grid;
+}
+@media screen and (max-width: 768px) {
+  .message-box {
+    max-width: 45vw;
+  }
+  .message-box h1 {
+    font-size: 2.5vw;
+  }
+  .message-box p {
+    font-size: 2.2vw;
+  }
+
+  .message-box button {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .message-box {
+    max-width: 60vw;
+  }
+  .message-box h1 {
+    font-size: 3.5vw;
+  }
+  .message-box p {
+    font-size: 3.2vw;
+  }
+
+  .message-box button {
+    font-size: 3.2vw;
+  }
+}
+.error-message{
+  color: red;
+}

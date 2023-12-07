@@ -7,11 +7,43 @@
     <link rel="stylesheet" href="stylesheets/services.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
     <link rel="stylesheet" href="./stylesheets/nav.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
     <title>Services</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PX3Q98P");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      '
+      https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '342746745031759');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="
+      https://www.facebook.com/tr?id=342746745031759&ev=PageView&noscript=1"
+    /></noscript>
   </head>
   <body>
     <section class="hero">
@@ -1185,7 +1217,7 @@
             <div class="links">
               <a href="./faqs.html">FAQ</a>
               <a href="./contact-us.html">Contact Us</a>
-              <a href="./cookie-policy">Cookie Policy</a>
+              <a href="./cookie-policy.html">Cookie Policy</a>
             </div>
           </div>
           <div class="menu">
@@ -1202,21 +1234,15 @@
       <hr class="heading-hr" />
       <div class="end">
         <div class="footer-left">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="./terms-of-service.html">Terms of Service</a>
+          <a href="./privacy-policy.html">Privacy Policy</a>
+          <a href="./terms-and-condition.html">Terms of Service</a>
         </div>
         <p class="footer-right">Adroittech © 2023. All rights reserved.</p>
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="./scripts/navbar.js"></script>
     <script src="main.js"></script>
-
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"
-    ></script>
     <script>
       const brands = document.querySelector("ul.brands"),
         total_brands = brands.children.length;
