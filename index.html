@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Start cookieyes banner -->
+    <script
+      id="cookieyes"
+      type="text/javascript"
+      src="https://cdn-cookieyes.com/client_data/31225221c7385c91686cd038/script.js"
+    ></script>
+    <!-- End cookieyes banner -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheets/common.css" />
@@ -22,7 +30,7 @@
       })(window, document, "script", "dataLayer", "GTM-PX3Q98P");
     </script>
     <!-- End Google Tag Manager -->
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
     <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -229,7 +237,7 @@
           width="24"
           height="24"
         ></object>
-        Our Services
+        About Us
       </span>
       <p>
         Adroit Tech was built to be a one-stop destination for all digital
@@ -252,7 +260,7 @@
           <p class="info">Years of Operation</p>
         </div>
       </div> -->
-      <a href="./services.html">
+      <a href="./about-us.html">
         <button class="btn secondary sec-btn">
           Learn More
           <i>
@@ -1229,8 +1237,7 @@
         <p class="footer-right">Adroittech © 2023. All rights reserved.</p>
       </div>
     </footer>
-
-    <script src="main.js"></script>
+    <script src="./scripts/main.js"></script>
     <script src="./scripts/navbar.js"></script>
     <script>
       const brands = document.querySelector("ul.brands"),
@@ -1239,10 +1246,13 @@
         "--total-brands",
         total_brands
       );
-
       for (let i = 0; i < total_brands; i++) {
         brands.appendChild(brands.children[i].cloneNode(true));
       }
     </script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"
+    ></script>
   </body>
 </html>

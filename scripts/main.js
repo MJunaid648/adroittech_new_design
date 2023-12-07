@@ -1,3 +1,4 @@
+// TESTIMONIALS
 const reviewWrap = document.getElementById("reviewWrap");
 const leftArrow = document.getElementById("leftArrow");
 const rightArrow = document.getElementById("rightArrow");
@@ -5,7 +6,6 @@ const imgDiv = document.getElementById("imgDiv");
 const personName = document.getElementById("personName");
 const profession = document.getElementById("profession");
 const description = document.getElementById("description");
-
 let people = [
   {
     photo:
@@ -43,13 +43,11 @@ let people = [
       "Biscuit chocolate pastry topping lollipop pie. Sugar plum brownie halvah dessert tiramisu tiramisu gummi bears icing cookie. Gummies gummi bears pie apple pie sugar plum jujubes. Oat cake croissant bear claw tootsie roll caramels. Powder ice cream caramels candy tiramisu shortbread macaroon chocolate bar. Sugar plum jelly-o chocolate dragée tart chocolate marzipan cupcake gingerbread.",
   },
 ];
-
 imgDiv.style.backgroundImage = people[0].photo;
 personName.innerText = people[0].name;
 profession.innerText = people[0].profession;
 description.innerText = people[0].description;
 let currentPerson = 0;
-
 //Select the side where you want to slide
 function slide(whichSide, personNumber) {
   let reviewWrapWidth = reviewWrap.offsetWidth + "px";
@@ -57,20 +55,16 @@ function slide(whichSide, personNumber) {
   //(+ or -)
   let side1symbol = whichSide === "left" ? "" : "-";
   let side2symbol = whichSide === "left" ? "-" : "";
-
   let tl = gsap.timeline();
-
   tl.to(reviewWrap, {
     duration: 0.4,
     opacity: 0,
     translateX: `${side1symbol + reviewWrapWidth}`,
   });
-
   tl.to(reviewWrap, {
     duration: 0,
     translateX: `${side2symbol + reviewWrapWidth}`,
   });
-
   setTimeout(() => {
     imgDiv.style.backgroundImage = people[personNumber].photo;
   }, 400);
@@ -83,14 +77,12 @@ function slide(whichSide, personNumber) {
   setTimeout(() => {
     description.innerText = people[personNumber].description;
   }, 400);
-
   tl.to(reviewWrap, {
     duration: 0.4,
     opacity: 1,
     translateX: 0,
   });
 }
-
 function setNextCardLeft() {
   if (currentPerson === 3) {
     currentPerson = 0;
@@ -98,10 +90,8 @@ function setNextCardLeft() {
   } else {
     currentPerson++;
   }
-
   slide("left", currentPerson);
 }
-
 function setNextCardRight() {
   if (currentPerson === 0) {
     currentPerson = 3;
@@ -109,13 +99,10 @@ function setNextCardRight() {
   } else {
     currentPerson--;
   }
-
   slide("right", currentPerson);
 }
-
 leftArrow.addEventListener("click", setNextCardLeft);
 rightArrow.addEventListener("click", setNextCardRight);
-
 // window.addEventListener("resize", () => {
 // 	description.style.height = "100%";
 // });

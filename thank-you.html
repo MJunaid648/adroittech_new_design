@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="stylesheets/common.css" />
-    <link rel="stylesheet" href="stylesheets/terms-and-condition.css" />
+    <link rel="stylesheet" href="./stylesheets/thank-you.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
     <link rel="stylesheet" href="./stylesheets/nav.css" />
-    <title>Terms & Conditions</title>
+    <title>Thank You</title>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -22,19 +23,32 @@
       })(window, document, "script", "dataLayer", "GTM-PX3Q98P");
     </script>
     <!-- End Google Tag Manager -->
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      '
-      https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '342746745031759');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "342746745031759");
+      fbq("track", "PageView");
     </script>
     <noscript
       ><img
@@ -42,7 +56,7 @@
         width="1"
         style="display: none"
         src="
-      https://www.facebook.com/tr?id=342746745031759&ev=PageView&noscript=1"
+        https://www.facebook.com/tr?id=342746745031759&ev=PageView&noscript=1"
     /></noscript>
   </head>
   <body>
@@ -103,58 +117,9 @@
           </ul>
         </nav>
       </div>
-      <h1 class="terms-condition">Terms and Conditions</h1>
+      <h1>Thank You <br />For contacting Adroittech</h1>
+      <p>Team Adroittech will soon respond back to you.</p>
     </section>
-
-    <section class="terms-content">
-      <h3>Effective Date: January 1, 2023</h3>
-      <h4>Acceptance of Terms</h4>
-      <p>
-        By accessing or using the AdroitTech website, you agree to be bound by
-        these Terms and Conditions. If you do not agree to these terms, please
-        refrain from using our services.
-      </p>
-      <h4>Intellectual Property</h4>
-      <p>
-        All content, logos, and materials on this site are the property of
-        AdroitTech and are protected by intellectual property laws. Unauthorized
-        use of any materials may violate copyright, trademark, and other laws.
-      </p>
-      <h4>Use of Services</h4>
-      <p>
-        Users are granted a non-exclusive, non-transferable license to access
-        and use AdroitTech services for personal or business purposes. Any
-        unauthorized use or modification of our services is strictly prohibited.
-      </p>
-      <h4>User Responsibilities</h4>
-      <p>
-        Users must provide accurate and current information, and agree not to
-        engage in any activities that may harm the website or compromise
-        security. AdroitTech reserves the right to terminate user accounts for
-        any violation of these terms.
-      </p>
-      <h4>Privacy Policy</h4>
-      <p>
-        Our Privacy Policy outlines how we collect, use, and protect your
-        personal information. By using our services, you agree to the terms
-        outlined in the Privacy Policy.
-      </p>
-      <h4>Limitation of Liability</h4>
-      <p>
-        AdroitTech is not liable for any direct, indirect, incidental,
-        consequential, or punitive damages arising from your use of our
-        services. We make no warranties, expressed or implied, regarding the
-        reliability or accuracy of our content.
-      </p>
-      <p>
-        By using AdroitTech's services, you acknowledge that you have read,
-        understood, and agree to these Terms and Conditions. If you have any
-        questions or concerns, please contact us at info@adroittech.eu
-      </p>
-      <p>AdroitTech - Crafting Digital Excellence.</p>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
       <div class="top-heading">
         <div>
@@ -237,6 +202,5 @@
       </div>
     </footer>
     <script src="./scripts/navbar.js"></script>
-
   </body>
 </html>

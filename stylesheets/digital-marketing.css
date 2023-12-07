@@ -4,6 +4,7 @@
 }
 .unlocking .main {
   display: flex;
+  align-items: center;
   gap: 12rem;
 }
 .unlocking div {
@@ -121,7 +122,8 @@
   background-position-y: center;
 }
 .working .main {
-  display: flex;
+  display: flex;width: 100%;
+  justify-content: space-between;
   gap: 2rem;
 }
 .working .main div {

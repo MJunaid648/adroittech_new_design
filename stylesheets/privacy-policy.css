@@ -1,6 +1,9 @@
 .terms-content{
     padding: 8rem 21rem;
 }
+.hero{
+    height: 100dvh;
+}
 @media only screen and (max-width: 480px) {
     .terms-content{
         padding: 6rem 2rem;

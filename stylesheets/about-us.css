@@ -31,6 +31,9 @@
 .values .card {
   flex: 1;
 }
+.values .cards .card hr {
+  /* margin-top: 1rem; */
+}
 .card {
   background: #181f23;
   padding: 2.4rem;
@@ -46,16 +49,7 @@
 }
 .card h3 {
   font-size: 3.6rem;
-  max-height: 7.2rem;
   font-weight: 500;
-}
-/* .card h3 br {
-  display: none;
-} */
-@media screen and (max-width: 1279px) and (min-width: 481px) {
-  .card h3 br {
-    display: block;
-  }
 }
 .card hr {
   margin: 1.8rem 0;
@@ -239,22 +233,6 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  /* HERO */
-  .hero {
-    padding: 0 2rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero h1 {
-    margin-top: 6rem;
-    font-size: 4rem;
-    text-align: center;
-  }
-  .hero p {
-    margin-bottom: 5rem;
-    text-align: center;
-    font-size: 1.4rem;
-  }
   /* OUR DIGITAL ODYSSEY */
   .our-digital .main {
     height: auto;
