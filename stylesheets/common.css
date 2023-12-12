@@ -109,6 +109,7 @@ section.hero {
   padding-top: 0;
 }
 .hero {
+  min-height: 100dvh;
   padding-bottom: 20rem;
   background: none;
   background-image: url("../assets/Dark\ Gradient\ background.png");
@@ -176,7 +177,6 @@ section.hero {
   /* HERO */
   .hero {
     padding: 0 2rem;
-    justify-content: center;
     align-items: center;
   }
   .hero h1 {

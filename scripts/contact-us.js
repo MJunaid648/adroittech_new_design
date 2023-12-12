@@ -1,24 +1,24 @@
-const modal = document.getElementById("myModal");
+// const modal = document.getElementById("myModal");
 const okayBtn = document.querySelector(".okayBtn");
 
-function closeModal() {
-  modal.classList.remove("show");
-  modal.classList.add("close");
-}
+// function closeModal() {
+//   modal.classList.remove("show");
+//   modal.classList.add("close");
+// }
 
-function showModal(event) {
-  modal.classList.remove("close");
-  modal.classList.add("show");
-}
+// function showModal(event) {
+//   modal.classList.remove("close");
+//   modal.classList.add("show");
+// }
 
 okayBtn.addEventListener("click", function () {
-  closeModal();
+  // closeModal();
   resetForm();
 });
 
 modal.addEventListener("click", function (event) {
   if (event.target === modal) {
-    closeModal();
+    // closeModal();
     resetForm();
   }
 });
@@ -39,15 +39,12 @@ emailInput.addEventListener("input", function () {
 function sendEmail() {
   // Clear previous error messages
   clearErrorMessages();
-
   const full_name = document.getElementById("full_name").value;
   const email = document.getElementById("email").value;
   const contact = document.getElementById("contact").value;
   const message = document.getElementById("message").value;
-
   // Validate email format
   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
   // Validate contact as a number if it's not empty
   if (contact && isNaN(contact)) {
     displayErrorMessage(
@@ -85,21 +82,19 @@ function sendEmail() {
   Name: ${full_name}
   Email: ${email}
   Contact: ${contact}
-
   Message:
   ${message}
 `;
-
-
-emailjs.init("RRvdcVP6c1cFeuKq0");
-emailjs.send("service_p5ossgn","template_h87fhdo",{
-  message: emailBody
-
-}).then(function(res){
-  showModal();
-  console.log(res.status)
-  // alert("success", res.status)
-})
+  emailjs.init("RRvdcVP6c1cFeuKq0");
+  emailjs
+    .send("service_p5ossgn", "template_h87fhdo", {
+      message: emailBody,
+    })
+    .then(function (res) {
+      showModal();
+      console.log(res.status);
+      // alert("success", res.status)
+    });
   // Send the email using Email.js
   // Email.send({
   //   Host: "smtp.elasticemail.com",
@@ -113,20 +108,18 @@ emailjs.send("service_p5ossgn","template_h87fhdo",{
   //   showModal();
   //   console.log(message);
   // });
+  window.location.href = "./thank-you.html";
 }
-
 function displayErrorMessage(elementId, message) {
   const errorElement = document.getElementById(elementId);
   errorElement.textContent = message;
 }
-
 function clearErrorMessages() {
   const errorElements = document.querySelectorAll(".error-message");
   errorElements.forEach(function (errorElement) {
     errorElement.textContent = "";
   });
 }
-
 function resetForm() {
   document.getElementById("full_name").value = "";
   document.getElementById("email").value = "";

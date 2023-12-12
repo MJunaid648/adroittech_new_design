@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="stylesheets/common.css" />
     <link rel="stylesheet" href="./stylesheets/digital-marketing.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
     <link rel="stylesheet" href="./stylesheets/nav.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Digital Marketing</title>
     <!-- Google Tag Manager -->
     <script>
@@ -22,31 +25,49 @@
       })(window, document, "script", "dataLayer", "GTM-PX3Q98P");
     </script>
     <!-- End Google Tag Manager -->
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      '
-      https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '342746745031759');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "216852868129388");
+      fbq("track", "PageView");
     </script>
     <noscript
       ><img
         height="1"
         width="1"
         style="display: none"
-        src="
-    https://www.facebook.com/tr?id=342746745031759&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=216852868129388&ev=PageView&noscript=1"
     /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
-    <section class="hero">
+    <section
+      class="hero animate-section"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
       <div class="navigation">
         <!-- Navbar -->
         <nav>
@@ -61,7 +82,7 @@
             <li>
               <a href="./software-development.html">Software Development</a>
             </li>
-            <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
+            <li><a href="./UI-UX-services.html">UI/UX Design</a></li>
             <li>
               <a class="active" href="./digital-marketing.html"
                 >Digital Marketing</a
@@ -94,7 +115,7 @@
           <ul>
             <li><a href="./about-us.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
-            <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
+            <li><a href="./UI-UX-services.html">UI/UX Design</a></li>
             <li>
               <a class="active" href="./digital-marketing.html"
                 >Digital Marketing</a
@@ -265,7 +286,11 @@
           <img src="./assets/working dmarketing.jpg" alt="Working process" />
         </div>
         <div class="steps">
-          <div class="step">
+          <div
+            class="step animate-section"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span>01</span>
             <h3>Discovery Phase</h3>
             <p>
@@ -273,7 +298,11 @@
               website, the market and your competitors
             </p>
           </div>
-          <div class="step">
+          <div
+            class="step animate-section"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span>02</span>
             <h3>Strategic Planning</h3>
             <p>
@@ -282,7 +311,11 @@
               and KPIs
             </p>
           </div>
-          <div class="step">
+          <div
+            class="step animate-section"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span>03</span>
             <h3>Execution Excellence</h3>
             <p>
@@ -290,7 +323,11 @@
               channels in mind for maximum impact on your target audience
             </p>
           </div>
-          <div class="step">
+          <div
+            class="step animate-section"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span>04</span>
             <h3>Analytics and Optimization</h3>
             <p>
@@ -298,7 +335,11 @@
               them with data-driven decisions to maximize results
             </p>
           </div>
-          <div class="step">
+          <div
+            class="step animate-section"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <span>05</span>
             <h3>Reporting</h3>
             <p>
@@ -386,7 +427,8 @@
         <div>
           <h2>Ready to Transform Your <br />Digital Presence?</h2>
           <p>
-            Let's Collaborate for Innovative Solutions Tailored to Your Business Goals
+            Let's Collaborate for Innovative Solutions Tailored to Your Business
+            Goals
           </p>
         </div>
         <a href="./contact-us.html">
@@ -406,6 +448,11 @@
             /></a>
             <p>Revolutionary Digital Experiences</p>
             <div class="social-icons">
+              <a
+                target="_blank"
+                href="https://whatsapp.com/channel/0029vacjrzwk0ibrsnrxb11x"
+                ><img src="./assets/whatsapplogo.png" alt="adroittech whatsapp"
+              /></a>
               <a
                 target="_blank"
                 href="https://www.facebook.com/profile.php?id=100094250503866"
@@ -428,7 +475,7 @@
             <div class="links">
               <a href="./about-us.html">About Us</a>
               <a href="./services.html">Services</a>
-              <a href="./UI-UX-services.html">Ui/UX Design</a>
+              <a href="./UI-UX-services.html">UI/UX Design</a>
               <a href="./digital-marketing.html">Digital Marketing</a>
               <a href="./software-development.html">Software Development</a>
             </div>
@@ -436,7 +483,7 @@
           <div class="menu">
             <p>USEFUL LINKS</p>
             <div class="links">
-              <a href="./faqs.html">FAQ</a>
+              <a href="./faqs.html">FAQs</a>
               <a href="./contact-us.html">Contact Us</a>
               <a href="./cookie-policy.html">Cookie Policy</a>
             </div>
@@ -462,5 +509,9 @@
       </div>
     </footer>
     <script src="./scripts/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

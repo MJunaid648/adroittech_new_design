@@ -181,27 +181,15 @@
   }
 }
 @media only screen and (max-width: 480px) {
-  .hero {
-    gap: 2rem;
-    padding: 0 2rem;
-  }
-  .hero h1 {
-    font-size: 6.8rem;
-    letter-spacing: 0.7rem;
-  }
-  .hero p {
-    margin-bottom: 8rem;
-    font-size: 1.7rem;
-  }
   /* DESIGNING */
-  .ux .main {
+  .designing .main {
     flex-direction: column-reverse;
     gap: 4.5rem;
   }
-  .ux p {
+  .designing p {
     font-size: 1.4rem;
   }
-  .ux > img {
+  .designing > img {
     margin-top: 18rem;
     margin-bottom: 3rem;
   }

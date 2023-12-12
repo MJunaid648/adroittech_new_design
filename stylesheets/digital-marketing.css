@@ -302,8 +302,6 @@
 @media only screen and (max-width: 480px) {
   /* HERO */
   .hero {
-    padding: 0 2rem;
-    justify-content: center;
     align-items: center;
   }
   .hero h1 {

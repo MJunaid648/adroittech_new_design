@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="stylesheets/common.css" />
     <link rel="stylesheet" href="stylesheets/faqs.css" />
     <link rel="stylesheet" href="stylesheets/terms-and-condition.css" />
     <link rel="stylesheet" href="./stylesheets/footer.css" />
     <link rel="stylesheet" href="./stylesheets/nav.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>FAQs</title>
     <!-- Google Tag Manager -->
     <script>
@@ -23,28 +26,42 @@
       })(window, document, "script", "dataLayer", "GTM-PX3Q98P");
     </script>
     <!-- End Google Tag Manager -->
-    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <!-- Meta Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      '
-      https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '342746745031759');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "216852868129388");
+      fbq("track", "PageView");
     </script>
     <noscript
       ><img
         height="1"
         width="1"
         style="display: none"
-        src="
-      https://www.facebook.com/tr?id=342746745031759&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=216852868129388&ev=PageView&noscript=1"
     /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <section class="hero">
@@ -62,7 +79,7 @@
             <li>
               <a href="./software-development.html">Software Development</a>
             </li>
-            <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
+            <li><a href="./UI-UX-services.html">UI/UX Design</a></li>
             <li><a href="./digital-marketing.html">Digital Marketing</a></li>
             <li>
               <a class="contact-us btn secondary" href="./contact-us.html"
@@ -91,7 +108,7 @@
           <ul>
             <li><a href="./about-us.html">About</a></li>
             <li><a href="./services.html">Services</a></li>
-            <li><a href="./UI-UX-services.html">Ui/UX Design</a></li>
+            <li><a href="./UI-UX-services.html">UI/UX Design</a></li>
             <li><a href="./digital-marketing.html">Digital Marketing</a></li>
             <li>
               <a href="./software-development.html">Software Development</a>
@@ -159,6 +176,11 @@
             <div class="social-icons">
               <a
                 target="_blank"
+                href="https://whatsapp.com/channel/0029vacjrzwk0ibrsnrxb11x"
+                ><img src="./assets/whatsapplogo.png" alt="adroittech whatsapp"
+              /></a>
+              <a
+                target="_blank"
                 href="https://www.facebook.com/profile.php?id=100094250503866"
                 ><img src="./assets/FacebookLogo.png" alt="Adroittech Facebook"
               /></a>
@@ -179,7 +201,7 @@
             <div class="links">
               <a href="./about-us.html">About Us</a>
               <a href="./services.html">Services</a>
-              <a href="./UI-UX-services.html">Ui/UX Design</a>
+              <a href="./UI-UX-services.html">UI/UX Design</a>
               <a href="./digital-marketing.html">Digital Marketing</a>
               <a href="./software-development.html">Software Development</a>
             </div>
@@ -187,7 +209,7 @@
           <div class="menu">
             <p>USEFUL LINKS</p>
             <div class="links">
-              <a href="./faqs.html">FAQ</a>
+              <a href="./faqs.html">FAQs</a>
               <a href="./contact-us.html">Contact Us</a>
               <a href="./cookie-policy.html">Cookie Policy</a>
             </div>
@@ -215,5 +237,9 @@
 
     <script src="scripts/faqs.js"></script>
     <script src="./scripts/navbar.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      aos.init();
+    </script>
   </body>
 </html>

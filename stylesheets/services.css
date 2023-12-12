@@ -340,8 +340,7 @@ ul.brands li.brand-logo {
 @media only screen and (max-width: 480px) {
   /* HERO */
   .hero {
-    padding: 0 2rem;
-    justify-content: center;
+    /* padding: 0 2rem; */
     align-items: center;
   }
   .hero h1 {

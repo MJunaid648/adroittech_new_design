@@ -89,7 +89,6 @@
 .why-us {
   background-image: url("../assets/sec\ bg\ right.svg");
   background-position-x: right;
-
 }
 .why-us .bullets {
   display: flex;
@@ -166,8 +165,6 @@
 @media only screen and (max-width: 480px) {
   /* HERO */
   .hero {
-    padding: 0 2rem;
-    justify-content: center;
     align-items: center;
   }
   .hero h1 {
