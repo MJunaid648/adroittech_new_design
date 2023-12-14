@@ -4,12 +4,16 @@
   --total-logos-height: calc(var(--total-brands) * var(--logo-height) * 2);
   --animation-duration: calc(var(--total-brands) * 1.5s);
 }
+body > div {
+  overflow: hidden;
+}
 /* HERO */
 .hero {
   padding: 0 5rem;
   padding-bottom: 10rem;
 }
-.hero .hero-bottom, .text {
+.hero .hero-bottom,
+.text {
   display: flex;
   justify-content: space-between;
 }

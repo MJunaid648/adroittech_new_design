@@ -4,6 +4,7 @@
   --total-logos-height: calc(var(--total-brands) * var(--logo-height) * 2);
   --animation-duration: calc(var(--total-brands) * 1.5s);
 }
+
 /* HERO */
 .hero {
   padding-bottom: 32rem;
@@ -11,7 +12,7 @@
 /* UI/UX DESIGN SERVICE */
 .ux .main {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 12rem;
 }
 .ux div {
@@ -263,6 +264,9 @@ ul.brands li.brand-logo {
   }
   .ux > img {
     margin-top: 5rem;
+  }
+  .ux .main div:last-child {
+    height: 100%;
   }
   /* TECHNOLOGIES */
   .tech {

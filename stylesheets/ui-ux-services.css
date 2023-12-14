@@ -1,6 +1,7 @@
 /* DESIGNING OUTSTANDING INTERFACES */
 .designing .main {
   display: flex;
+  align-items: flex-start;
   gap: 12rem;
 }
 .designing div {
@@ -22,6 +23,7 @@
   height: 64rem;
   object-fit: cover;
 }
+
 .designing .main .txt .bullets {
   display: flex;
   width: 100%;
@@ -94,7 +96,7 @@
   display: flex;
   gap: 5.6rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
 }
 .bullets {

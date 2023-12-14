@@ -16,12 +16,12 @@ okayBtn.addEventListener("click", function () {
   resetForm();
 });
 
-modal.addEventListener("click", function (event) {
-  if (event.target === modal) {
-    // closeModal();
-    resetForm();
-  }
-});
+// modal.addEventListener("click", function (event) {
+//   if (event.target === modal) {
+//     // closeModal();
+//     resetForm();
+//   }
+// });
 
 const emailInput = document.getElementById("email");
 emailInput.addEventListener("input", function () {
@@ -91,8 +91,9 @@ function sendEmail() {
       message: emailBody,
     })
     .then(function (res) {
-      showModal();
+      // showModal();
       console.log(res.status);
+      window.location.href = "./thank-you.html";
       // alert("success", res.status)
     });
   // Send the email using Email.js
@@ -108,7 +109,6 @@ function sendEmail() {
   //   showModal();
   //   console.log(message);
   // });
-  window.location.href = "./thank-you.html";
 }
 function displayErrorMessage(elementId, message) {
   const errorElement = document.getElementById(elementId);

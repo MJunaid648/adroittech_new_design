@@ -27,6 +27,9 @@ body {
   font-family: var(--body);
   font-size: 1.6rem;
 }
+section {
+  overflow: hidden;
+}
 .left-frame {
   padding: 0.8rem 1.6rem;
   margin-bottom: 1rem;
