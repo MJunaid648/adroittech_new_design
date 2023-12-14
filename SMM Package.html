@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheets/common.css" />
+    <link rel="stylesheet" href="./stylesheets/SMM Package.css" />
+    <link rel="stylesheet" href="./stylesheets/nav.css" />
+    <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Social Media Management Package</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PX3Q98P");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "216852868129388");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=216852868129388&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <section
+      class="hero animate-section"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
+      <div class="navigation">
+        <!-- Navbar -->
+        <nav>
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./assets/logo.png" alt="Adroittech logo"
+            /></a>
+          </div>
+          <ul class="links">
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li>
+              <a href="./software-development.html">Software Development</a>
+            </li>
+            <li><a href="./UI-UX-services.html">UI/UX Design</a></li>
+            <li><a href="./digital-marketing.html">Digital Marketing</a></li>
+            <li>
+              <a
+                class="contact-us btn secondary active"
+                href="./contact-us.html"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button class="hamberger" onclick="hamClick()">
+          <i>
+            <img
+              id="hamburgerIcon"
+              src="./assets/hamberger.svg"
+              alt="hamberger icon"
+            />
+          </i>
+        </button>
+        <!-- MOBILE NAVBAR -->
+        <nav class="mobnav drawerClosed">
+          <div class="logo">
+            <a href="./index.html"
+              ><img src="./assets/logo.png" alt="Adroittech logo"
+            /></a>
+          </div>
+          <hr />
+          <ul>
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./UI-UX-services.html">UI/UX Design</a></li>
+            <li><a href="./digital-marketing.html">Digital Marketing</a></li>
+            <li>
+              <a href="./software-development.html">Software Development</a>
+            </li>
+            <li>
+              <a
+                class="contact-us btn secondary active"
+                href="./contact-us.html"
+                >CONTACT US</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1>24% Off Social Media Management</h1>
+      <p>Offer is Valid till 31st January 2024</p>
+    </section>
+    <!-- CARDS-SECTION -->
+    <section class="cards-section">
+      <span class="left-frame">
+        <object
+          type="image/svg+xml"
+          data="./assets/ArrowDownRight.svg"
+          width="24"
+          height="24"
+        ></object>
+        Package
+      </span>
+      <div class="top-heading">
+        <h2>Package Includes The Following <br />For 3 Months</h2>
+        <p>Terms & Conditions Applied*</p>
+      </div>
+      <hr class="heading-hr" />
+      <div class="cards">
+        <div
+          class="card animate-section"
+          data-aos="flip-left"
+          data-aos-duration="1500"
+        >
+          <object type="image/svg+xml" data="./assets/video.svg"></object>
+          <h3>Post <br />Design</h3>
+          <hr />
+          <p>
+            Engaging Posts and Reels with Custom Brand Elements and Vibrant
+            Graphics that pack a punch and deliver your message
+          </p>
+        </div>
+        <div
+          class="card animate-section"
+          data-aos="flip-left"
+          data-aos-duration="1500"
+        >
+          <object
+            type="image/svg+xml"
+            data="./assets/calendar-sharp.svg"
+          ></object>
+          <h3>Content <br />Calendar</h3>
+          <hr />
+          <p>
+            Plan your campaigns and posts for all social media platforms
+            according to key dates and events to stay ahead of your competition
+          </p>
+        </div>
+        <div
+          class="card animate-section"
+          data-aos="flip-left"
+          data-aos-duration="1500"
+        >
+          <object
+            type="image/svg+xml"
+            data="./assets/account-tree.svg"
+          ></object>
+          <h3>Account <br />Management</h3>
+          <hr />
+          <p>
+            Complete Social Media Account Management for your business,
+            including but not limited to, Facebook, Instagram and LinkedIn
+          </p>
+        </div>
+        <div
+          class="card animate-section"
+          data-aos="flip-left"
+          data-aos-duration="1500"
+        >
+          <object type="image/svg+xml" data="./assets/analytics.svg"></object>
+          <h3>Tracking <br />Analytics</h3>
+          <hr />
+          <p>
+            Data-driven decision making with custom dashboards for KPIs, Traffic
+            acquisition, Conversion Tracking, and Competitor benchmarking
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FORM -->
+    <section class="form-sec">
+      <span class="left-frame">
+        <object
+          type="image/svg+xml"
+          data="./assets/ArrowDownRight.svg"
+          width="24"
+          height="24"
+        ></object>
+        Contact Us
+      </span>
+      <div class="top-heading">
+        <h2>Get In Touch With Us</h2>
+        <p>communication Is Key</p>
+      </div>
+      <hr class="heading-hr" />
+      <main>
+        <div
+          class="left animate-section"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <p>
+            For any queries, concerns and / or suggestions, please feel free to
+            contact us!
+          </p>
+          <div class="info">
+            <p class="heading">PHONE</p>
+            <p>+49 (0) 6229 9336659</p>
+            <p>+49 (0) 163 5689 364</p>
+          </div>
+          <div class="info">
+            <p class="heading">EMAIL</p>
+            <p>info@adroittech.eu</p>
+          </div>
+          <div class="info">
+            <p class="heading">OFFICE</p>
+            <p>
+              Kart-Schmitt-Str 7 69239 <br />
+              Neckarsteinach Germany
+            </p>
+          </div>
+          <p class="heading">SOCIALS</p>
+          <div class="social-icons">
+            <a
+              target="_blank"
+              href="https://whatsapp.com/channel/0029vacjrzwk0ibrsnrxb11x"
+              ><img src="./assets/whatsapplogo.png" alt="adroittech whatsapp"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100094250503866"
+              ><img src="./assets/FacebookLogo.png" alt="Adroittech Facebook"
+            /></a>
+            <a target="_blank" href="https://www.instagram.com/adroit_tech__/"
+              ><img src="./assets/InstagramLogo.png" alt="Adroittech Instagram"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/96423285/admin/feed/posts/"
+              ><img src="./assets/LinkedinLogo.png" alt="Adroittech Linkedin"
+            /></a>
+          </div>
+        </div>
+        <form
+          class="animate-section"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <input type="text" placeholder="Name" id="full_name" required />
+          <div class="error-message" id="full_name_error"></div>
+
+          <input
+            type="email"
+            name=""
+            id="email"
+            required
+            placeholder="johndoe@gmail.com"
+          />
+          <div class="error-message" id="email_error"></div>
+          <div class="error-message" id="invalid_email_error"></div>
+          <input type="tel" name="" placeholder="Phone No." id="contact" />
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
+          <div class="error-message" id="message_error"></div>
+
+          <button
+            class="btn primary"
+            type="button"
+            id="form-submit"
+            onclick="sendEmail()"
+          >
+            Get a Quote
+            <img src="./assets/Vector.svg" alt="" />
+          </button>
+        </form>
+      </main>
+    </section>
+    <!-- MODAL -->
+    <!-- <div class="modal close" id="myModal">li
+      <div class="message-box">
+        <h1>Done &#x2713;</h1>
+        <p>Thank you for contacting us! We will get in touch with you soon!</p>
+        <button class="okayBtn">Okay</button>
+      </div>
+    </div> -->
+    <!-- TERMS AND CONDITIONS -->
+    <section class="terms">
+      <div class="top-heading">
+        <h2>*Terms & Conditions</h2>
+      </div>
+      <hr class="heading-hr" />
+      <div class="main">
+        <ul>
+          <li>
+            <h2>Offer Validity</h2>
+            <p>
+              This special discount offer is valid only till 31st January 2024.
+              <br />
+              All bookings must be completed and confirmed by 11:59 PM on
+              January 31, 2024.
+            </p>
+          </li>
+          <li>
+            <h2>Package Customization</h2>
+            <p>
+              Clients have the flexibility to tailor their package based on
+              individual requirements, including the number of posts and
+              additional services.
+            </p>
+          </li>
+          <li>
+            <h2>Booking Process</h2>
+            <p>
+              To avail of the discount, clients must initiate the booking
+              process within the specified offer period. <br />
+              All bookings must be confirmed by the deadline to qualify for the
+              24% discount.
+            </p>
+          </li>
+          <li>
+            <h2>Payment Terms</h2>
+            <p>
+              Full payment must be made in accordance with the agreed-upon
+              payment terms outlined in the booking agreement.
+            </p>
+          </li>
+          <li>
+            <h2>Cancellation and Refund</h2>
+            <p>Payment for completed milestones is non-refundable.</p>
+          </li>
+          <li>
+            <h2>Client Requirement</h2>
+            <p>
+              The final package details, including the number of posts and
+              specific services, will be determined based on the client's
+              individual requirements. <br />Clients are encouraged to
+              communicate their preferences clearly during the consultation
+              process.
+            </p>
+          </li>
+          <li>
+            <h2>Changes and Amendments</h2>
+            <p>
+              Any changes or amendments to the package details must be
+              communicated and confirmed in writing.
+            </p>
+          </li>
+          <li>
+            <h2>General Terms</h2>
+            <p>
+              This offer cannot be combined with any other promotions or
+              discounts. <br />
+              Adroit Tech reserves the right to modify or terminate the offer at
+              any time without prior notice.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="top-heading">
+        <div>
+          <h2>Ready to Transform Your <br />Digital Presence?</h2>
+          <p>
+            Let's Collaborate for Innovative Solutions Tailored to Your Business
+            Goals
+          </p>
+        </div>
+        <a href="./contact-us.html">
+          <button class="btn primary sec-btn">
+            Get Started
+            <i>
+              <img src="./assets/Vector.svg" alt="" />
+            </i></button
+        ></a>
+      </div>
+      <hr class="heading-hr" />
+      <main>
+        <div class="social-links">
+          <div class="socials">
+            <a href="./index.html"
+              ><img class="logo" src="./assets/logo.png" alt="Adroittech"
+            /></a>
+            <p>Revolutionary Digital Experiences</p>
+            <div class="social-icons">
+              <a
+                target="_blank"
+                href="https://whatsapp.com/channel/0029vacjrzwk0ibrsnrxb11x"
+                ><img src="./assets/whatsapplogo.png" alt="adroittech whatsapp"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100094250503866"
+                ><img src="./assets/FacebookLogo.png" alt="Adroittech Facebook"
+              /></a>
+              <a target="_blank" href="https://www.instagram.com/adroit_tech__/"
+                ><img
+                  src="./assets/InstagramLogo.png"
+                  alt="Adroittech Instagram"
+              /></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/96423285/admin/feed/posts/"
+                ><img src="./assets/LinkedinLogo.png" alt="Adroittech Linkedin"
+              /></a>
+            </div>
+          </div>
+          <div class="menu">
+            <p>MENU</p>
+            <div class="links">
+              <a href="./about-us.html">About Us</a>
+              <a href="./services.html">Services</a>
+              <a href="./UI-UX-services.html">UI/UX Design</a>
+              <a href="./digital-marketing.html">Digital Marketing</a>
+              <a href="./software-development.html">Software Development</a>
+            </div>
+          </div>
+          <div class="menu">
+            <p>USEFUL LINKS</p>
+            <div class="links">
+              <a href="./faqs.html">FAQs</a>
+              <a href="./contact-us.html">Contact Us</a>
+              <a href="./cookie-policy.html">Cookie Policy</a>
+            </div>
+          </div>
+          <div class="menu">
+            <p>CONTACT</p>
+            <div class="links">
+              <p>+49 (0) 6229 9336659</p>
+              <p>+49 (0) 163 5689 364</p>
+              <p>info@adroittech.eu</p>
+              <p>Kart-Schmitt-Str 7 69239 <br />Neckarsteinach Germany</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <hr class="heading-hr" />
+      <div class="end">
+        <div class="footer-left">
+          <a href="./privacy-policy.html">Privacy Policy</a>
+          <a href="./terms-and-condition.html">Terms of Service</a>
+        </div>
+        <p class="footer-right">Adroittech © 2023. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("RRvdcVP6c1cFeuKq0");
+      });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/SMM.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

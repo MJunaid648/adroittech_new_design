@@ -1,0 +1,287 @@
+main {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.left > p {
+  color: #eaeaea;
+  font-size: 2rem;
+  width: 80%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+p.heading {
+  color: var(--Cool-gray, #9fa0c3);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.info p {
+  font-size: 1.6rem;
+}
+.left .social-icons {
+  margin-top: -2rem;
+}
+/* CARDS SECTION  */
+.cards-section {
+  background-image: url("../assets/sec\ bg\ right.svg");
+  background-position-x: right;
+  background-position-y: bottom;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+}
+.card {
+  max-width: 25%;
+  background: #181f23;
+  padding: 2.4rem;
+  border-radius: 1.375rem;
+}
+.card > object {
+  width: 6rem;
+  height: 6rem;
+  margin-bottom: 14rem;
+}
+.card p {
+  font-size: 1.5rem;
+}
+.card h3 {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+.card hr {
+  margin: 1.8rem 0;
+  border: 1px solid #2a353c;
+}
+
+/* FORM */
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+input,
+textarea {
+  border-radius: 11px;
+  padding: 2.5rem 2.8rem;
+  background-color: #181f23;
+  border: none;
+  color: #adadad;
+  font-size: 2rem;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #7b22e3;
+}
+form button {
+  align-self: flex-start;
+}
+/* TERMS & CONDITIONS */
+.terms .main {
+  display: flex;
+  gap: 16rem;
+}
+.terms ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.terms ul p {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  /* HERO */
+  .hero {
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+  .hero h1 {
+    margin-top: 8rem;
+    font-size: 6.8rem;
+    letter-spacing: 0.7rem;
+  }
+  .hero p {
+    margin-bottom: 8rem;
+    font-size: 1.7rem;
+  }
+  main {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .left > p {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  p.heading {
+    font-size: 1.5rem;
+  }
+  .info p {
+    font-size: 1.6rem;
+  }
+  /* CARDS SECTION */
+  .card {
+    padding: 2vw;
+    width: 33%;
+  }
+  .card > object {
+    margin-bottom: 10rem;
+  }
+  .card p {
+    font-size: 1.6rem;
+  }
+  .card h3 {
+    font-size: 3.1vw;
+  }
+  /* FORM */
+  input,
+  textarea {
+    font-size: 1.8rem;
+  }
+  /* TERMS */
+  .terms {
+    padding-left: 7rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* HERO */
+  .hero {
+    align-items: center;
+  }
+  .hero h1 {
+    margin-top: 6rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .hero p {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  main {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .left > p {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  p.heading {
+    font-size: 1.3rem;
+  }
+  .info p {
+    font-size: 1.4rem;
+  }
+  /* CARDS SECTION  */
+  .cards-section .card {
+    max-width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 2.7rem;
+  }
+  .card h3 {
+    font-size: 3.2rem;
+  }
+  /* FORM */
+  input,
+  textarea {
+    font-size: 1.6rem;
+  }
+   /* TERMS */
+   .terms {
+    padding-left: 3rem;
+  }
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  z-index: 500;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+}
+
+.message-box {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 35vw;
+  padding: 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.message-box h1 {
+  font-size: 2.5vw;
+}
+.message-box p {
+  font-size: 1.2vw;
+}
+
+.message-box button {
+  padding: 0.8vw 1.2vw;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.close {
+  display: none;
+}
+.show {
+  display: grid;
+}
+@media screen and (max-width: 768px) {
+  .message-box {
+    max-width: 45vw;
+  }
+  .message-box h1 {
+    font-size: 2.5vw;
+  }
+  .message-box p {
+    font-size: 2.2vw;
+  }
+
+  .message-box button {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .message-box {
+    max-width: 60vw;
+  }
+  .message-box h1 {
+    font-size: 3.5vw;
+  }
+  .message-box p {
+    font-size: 3.2vw;
+  }
+
+  .message-box button {
+    font-size: 3.2vw;
+  }
+}
+.error-message {
+  color: red;
+}
