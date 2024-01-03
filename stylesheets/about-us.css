@@ -69,7 +69,11 @@
 }
 .synergizing .card img {
   width: 100%;
+  object-fit: cover;
   margin-bottom: 2rem;
+}
+br.AR {
+  display: none;
 }
 /* TESTIMONIALS */
 .testimonials {
@@ -202,6 +206,9 @@
   .synergizing .card img {
     width: 100%;
     margin-bottom: 2rem;
+  }
+  br.AR {
+    display: block;
   }
   /* TESTIMONIALS */
   .testimonials {

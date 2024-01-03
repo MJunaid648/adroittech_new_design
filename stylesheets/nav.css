@@ -25,19 +25,29 @@ nav a {
 nav a.active {
   color: #9438ff;
 }
-nav li {
+nav li,
+.logo a {
   border-bottom: 1px solid transparent;
 }
-nav li:hover {
+nav li:hover,
+.logo a:nth-child(2):hover {
   border-bottom: 1px solid #fff;
 }
 nav li:last-child:hover {
   border-bottom: 1px solid transparent;
 }
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .logo img {
   width: 15.1rem;
   height: 3.1rem;
   cursor: pointer;
+}
+.logo a {
+  font-size: 1.8rem;
 }
 nav .links a.contact-us {
   background: #181f23 !important;
@@ -52,12 +62,12 @@ nav .links a.contact-us {
   background-color: transparent;
   position: fixed;
   right: 2rem;
-  top: 2.5rem;
+  top: 2.9rem;
   z-index: 100;
 }
-
 .mobnav .logo {
   align-self: flex-start;
+  width: 90%;
 }
 .mobnav hr {
   width: 100%;
@@ -66,7 +76,6 @@ nav .links a.contact-us {
 .mobnav ul {
   flex-direction: column;
 }
-
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   nav ul {
     gap: 1.5rem;
@@ -79,7 +88,6 @@ nav .links a.contact-us {
     padding: 0.5rem 0.8rem;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .hamberger {
     display: block;
@@ -129,12 +137,12 @@ nav .links a.contact-us {
     font-size: 2rem;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) { 
   nav a {
     font-size: 2.4rem;
   }
   .logo img {
-    width: 32vw;
+    object-fit: contain;
   }
 }
 .mobnav .contact-us {

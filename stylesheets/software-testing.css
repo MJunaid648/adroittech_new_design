@@ -1,0 +1,164 @@
+/* Continuous software testing */
+.cst .main {
+  display: flex;
+  gap: 12rem;
+}
+.cst div {
+  flex: 1;
+}
+.cst .main p {
+  font-size: 2rem;
+}
+.cst div img {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.cst > img {
+  border-radius: 16px;
+  margin-top: 8rem;
+  width: 100%;
+  height: 64rem;
+  object-fit: cover;
+}
+/* Types of software testing */
+.types {
+  background: #0d1317;
+}
+.types .main {
+  display: flex;
+  gap: 2rem;
+}
+.types .main div {
+  flex: 1;
+}
+.types .main div img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+}
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.step {
+  padding: 2.4rem;
+  border-radius: 22px;
+  background: #181f23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step span {
+  color: #731dd8;
+  font-size: 2rem;
+}
+.step h3 {
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 500;
+}
+.step p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* WHY US */
+.why-us {
+  background-image: url("../assets/sec\ bg\ right.svg");
+  background-position-x: right;
+}
+.why-us .bullets {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+.bullets hr {
+  border: 1px solid #2a353c;
+}
+.bullet {
+  padding: 0 1.2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.bullet h3 {
+  font-size: 3.6rem;
+}
+.bullet p {
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  /* Continuous software testing */
+  .cst .main {
+    gap: 6rem;
+  }
+  .cst.main p {
+    font-size: 1.6rem;
+  }
+  .cst .main div:nth-child(2) {
+    display: none;
+  }
+  .cst > img {
+    margin-top: 5rem;
+  }
+  /* Types of software testing */
+  .types .main {
+    gap: 1rem;
+  }
+  .types .main div {
+    flex: 1;
+  }
+  .types .main div img {
+    object-fit: cover;
+  }
+  .step h3 {
+    font-size: 3rem;
+  }
+  /* WHY US */
+  .bullet h3 {
+    font-size: 3rem;
+  }
+  .bullet p {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* SOFTWARE DEVELOPMENT EXCELLENCE */
+  .cst .main {
+    flex-direction: column-reverse;
+    gap: 4.5rem;
+  }
+  .cst .main p {
+    font-size: 1.4rem;
+  }
+  .cst button {
+    font-size: 1.6rem;
+  }
+  .cst > img {
+    display: none;
+  }
+  /* TYPES PROCESS */
+  .types .main {
+    flex-direction: column-reverse;
+  }
+  /* WHY US */
+  .why-us{
+    padding-bottom: 5rem;
+  }
+  .why-us .bullets {
+    gap: 1.6rem;
+  }
+  .bullet h3 {
+    font-size: 2.4rem;
+  }
+  .bullet p {
+    font-size: 1.4rem;
+  }
+  .types .main div img {
+    display: none;
+  }
+}
