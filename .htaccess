@@ -1,0 +1,26 @@
+
+#Only for single version, https, https, www, without www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.adroittech\.eu$
+RewriteRule ^(.*)$ https://www.adroittech.eu/$1 [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.adroittech.eu/$1 [R=301,L]
+
+#
+RewriteBase /
+
+# Redirect requests with .html to non-.html version
+RewriteCond %{THE_REQUEST} \.html
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# If the requested file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Add .html extension
+RewriteRule ^(.*)$ $1.html [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [L,R=301]
